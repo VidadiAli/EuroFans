@@ -186,7 +186,7 @@ body{
 
 @media (max-width: 500px){
 	#div3 span{
-		width: 30px;
+		width: 35px;
 	}
 	#div3 .td2{
 	    width: 60%;
@@ -203,8 +203,11 @@ body{
 	    margin: .2rem .5rem;
     }
 	#div3 span{
-		width: 30px;
+		width: 33px;
 	}
+	#div3 .td2{
+	    width: 57%;
+    }
     h1{
     	font-size: 1.2rem;
     }
