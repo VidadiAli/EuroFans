@@ -214,16 +214,19 @@ body{
 }
 
 @media (max-width: 400px){
+	#div3 span{
+		width: 37px;
+	}
 	#div2 ul li a{
 	    padding: .2rem .5rem;
 	    margin: .2rem .4rem;
     }
 	#div3 .td2{
-	    width: 53%;
+	    width: 51%;
     }
 }
 
-@media (max-width: 360px){
+@media (max-width: 380px){
 	#div2 ul li a{
 	    font-size: .7rem;
 	    padding: .2rem .3rem;
