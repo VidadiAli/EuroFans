@@ -164,7 +164,7 @@ body{
 		margin: 0;
 		position: relative;
 		top: 1rem;
-		width: 40px;
+		width: 30px;
 	}
 	#div3 .td2{
 	    width: 60%;
@@ -182,19 +182,22 @@ body{
 	#div3 h1{
 		font-size: 1.5rem;
 	}
+	#div3 .faiz{
+		width: 42px;
+		}
 }
 
 @media (max-width: 500px){
-	#div3 span{
-		width: 35px;
-	}
-	#div3 .td2{
+    #div3 .td2{
 	    width: 60%;
     }
     #div2 ul li a{
 	    padding: .5rem 1rem;
 	    margin: .2rem .5rem;
     }
+    #div3 .faiz{
+	width: 42px;
+		}
 }
 
 @media (max-width: 450px){
@@ -202,21 +205,20 @@ body{
 	    padding: .2rem .7rem;
 	    margin: .2rem .5rem;
     }
-	#div3 span{
-		width: 33px;
-	}
+	
 	#div3 .td2{
 	    width: 57%;
     }
     h1{
     	font-size: 1.2rem;
     }
+    #div3 .faiz{
+	width: 42px;
+		}
 }
 
 @media (max-width: 400px){
-	#div3 span{
-		width: 37px;
-	}
+	
 	#div2 ul li a{
 	    padding: .2rem .5rem;
 	    margin: .2rem .4rem;
@@ -224,6 +226,9 @@ body{
 	#div3 .td2{
 	    width: 51%;
     }
+    #div3 .faiz{
+	width: 42px;
+	}
 }
 
 @media (max-width: 380px){
