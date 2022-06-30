@@ -128,6 +128,20 @@ body{
 
 
 
+
+@media (max-width: 1250px){
+	#div3{
+		margin: 5rem 8rem;
+		padding: 5rem 8rem;
+	}
+	#div3 .td2{
+		width: 28rem;
+	        margin: .2rem .7rem;
+	}
+}
+
+
+
 @media (max-width: 560px){
 	body{
 		border: none;
