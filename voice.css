@@ -91,6 +91,9 @@ body{
     background: white;
     border-radius: 5px;
 }
+#div3 .sira{
+	width: 30px;
+}
 #div3 .td1{
 	background: lightgray;
 	border-radius: 0;
@@ -185,6 +188,9 @@ body{
 	#div3 .faiz{
 		width: 42px;
 		}
+	#div3 .sira{
+		width: 25px;
+	}
 }
 
 @media (max-width: 500px){
