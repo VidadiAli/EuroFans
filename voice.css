@@ -127,6 +127,22 @@ body{
 }
 
 
+#semiler{
+	width: 100%;
+	position: absolute;
+	top: 23.4rem;
+}
+#semiler a{
+	display: inline-block;
+	width: 50%;
+	font-size: 1.4rem;
+	text-align: center;
+	padding: 1rem 2rem;
+	font-weight: 900;
+	color: blueviolet;
+}
+
+
 
 
 @media (max-width: 1250px){
@@ -143,6 +159,12 @@ body{
 
 
 @media (max-width: 560px){
+	#semiler{
+		top: 15rem;
+	}
+	#semiler a{
+		font-size: .7rem;
+	}
 	body{
 		border: none;
 	}
@@ -211,6 +233,9 @@ body{
 }
 
 @media (max-width: 500px){
+	#semiler{
+		top: 14.2rem;
+	}
     #div3 .td2{
 	    width: 60%;
     }
@@ -224,6 +249,9 @@ body{
 }
 
 @media (max-width: 450px){
+	#semiler{
+		top: 13.5rem;
+	}
 	#div2 ul li a{
 	    padding: .2rem .7rem;
 	    margin: .2rem .5rem;
@@ -238,6 +266,11 @@ body{
     #div3 .faiz{
 	width: 42px;
 		}
+}
+@media (max-width: 412px){
+	#semiler{
+		top: 15.5rem;
+	}
 }
 
 @media (max-width: 400px){
@@ -255,6 +288,12 @@ body{
 }
 
 @media (max-width: 380px){
+	#semiler{
+		top: 14.95rem;
+	}
+	#semiler a{
+		font-size: .6rem;
+	}
 	#div2 ul li a{
 	    font-size: .7rem;
 	    padding: .2rem .3rem;
