@@ -311,3 +311,9 @@ body{
 	    width: 50%;
     }
 }
+
+@media (max-width: 340px){
+	#semiler{
+		top: 13.7rem;
+	}
+}
