@@ -134,12 +134,15 @@ body{
 }
 #semiler a{
 	display: inline-block;
-	width: 50%;
+	width: 36%;
 	font-size: 1.4rem;
 	text-align: center;
 	padding: 1rem 2rem;
 	font-weight: 900;
 	color: blueviolet;
+}
+#semiler #bigg{
+	width: 28%;
 }
 
 
@@ -250,7 +253,7 @@ body{
 
 @media (max-width: 450px){
 	#semiler{
-		top: 13.5rem;
+		top: 13rem;
 	}
 	#div2 ul li a{
 	    padding: .2rem .7rem;
