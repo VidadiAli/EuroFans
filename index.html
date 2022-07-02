@@ -355,7 +355,7 @@ BE HONEST!
                           <span id="ger">8</span>
                           <span id="uk">62</span>
                           <span id="isr">31</span>
-                          <span id="itl">0</span>
+                          <span id="swi">0</span>
                           <span id="san">79</span>
                           <span id="bel">13</span>
                           <span id="spa">2</span>
@@ -379,8 +379,8 @@ BE HONEST!
                           <span id="bul">0</span>
                           <span id="net">37</span>
                           <span id="ire">2</span>
-                          <span id="mol">0</span>
-                          <span id="geo">10</span>
+                          <span id="lit">0</span>
+                          <span id="ukr">10</span>
       
    </div>
 
@@ -404,7 +404,7 @@ BE HONEST!
        var Spain = Number(spa.textContent);
        var Belgium = Number(bel.textContent);
        var San = Number(san.textContent);
-       var Italy = Number(itl.textContent);
+       var Swit = Number(swi.textContent);
        var Israel = Number(isr.textContent);
        var UnitedK = Number(uk.textContent);
        var Germany = Number(ger.textContent);
@@ -416,8 +416,8 @@ BE HONEST!
        var Bulgaria = Number(bul.textContent);
        var Netherlands = Number(net.textContent);
        var Ireland = Number(ire.textContent);
-       var Moldova = Number(mol.textContent);
-       var Georgia = Number(geo.textContent);
+       var Lithuania = Number(lit.textContent);
+       var Ukraine = Number(ukr.textContent);
         
        var Img1 = document.getElementById('img1');
        var Img2 = document.getElementById('img2');
@@ -450,11 +450,11 @@ BE HONEST!
        var Img29 = document.getElementById('img29');
        var Img30 = document.getElementById('img30');
 
-           var list1=[Sweden, Romania, Turkey, Albania, Malta, Finland, Cyprus, Austra, France, Bosnia, Norway, Portugal, Azerbaijan, Spain, Belgium, San, Italy, Israel, UnitedK, Germany, Greece, Denmark, Czech, Poland, Kosovo, Bulgaria, Netherlands, Ireland, Moldova, Georgia];
+           var list1=[Sweden, Romania, Turkey, Albania, Malta, Finland, Cyprus, Austra, France, Bosnia, Norway, Portugal, Azerbaijan, Spain, Belgium, San, Swit, Israel, UnitedK, Germany, Greece, Denmark, Czech, Poland, Kosovo, Bulgaria, Netherlands, Ireland, Lithuania, Ukraine];
 
-           var list2=["Sweden - T.İ.ViAl", "Romania - VKS", "Turkey - Əli Hüseyn", "Albania - MoonStar", "Malta - Ilsvami", "Finland - Fərail Londonlu", "Cyprus - Möhsüm", "Austria - Elvin", "France - Mirzə", "Bosnia and Herzogovina - Nargiz", "Norway - Nərmin", "Portugal - Khan Terrero", "Azerbaijan - Tərlan", "Spain - Husseın", "Belgium - Memo",  "San Marino - Teo Terlano", "? - ?", "Israel - Səfaşka", "United Kingdom - Aysu", "Germany - Nihad", "Greece - Taleh", "Denmark - Bəhruz", "Czech Republic - WillieRn", "Poland - EFO", "Kosovo - Ömerica", "Bulgaria - AR", "The Netherlands - Muradfzd", "Ireland - Ibrhmlx", "Lithuania - Zef Del Rey", "Ukraine - MirAli"];
+           var list2=["Sweden - T.İ.ViAl", "Romania - VKS", "Turkey - Əli Hüseyn", "Albania - MoonStar", "Malta - Ilsvami", "Finland - Fərail Londonlu", "Cyprus - Möhsüm", "Austria - Elvin", "France - Mirzə", "Bosnia and Herzogovina - Nargiz", "Norway - Nərmin", "Portugal - Khan Terrero", "Azerbaijan - Tərlan", "Spain - Husseın", "Belgium - Memo",  "San Marino - Teo Terlano", "Switzerland - NzzzL", "Israel - Səfaşka", "United Kingdom - Aysu", "Germany - Nihad", "Greece - Taleh", "Denmark - Bəhruz", "Czech Republic - WillieRn", "Poland - EFO", "Kosovo - Ömerica", "Bulgaria - AR", "The Netherlands - Muradfzd", "Ireland - Ibrhmlx", "Lithuania - Zef Del Rey", "Ukraine - MirAli"];
 
-           var listimg=['voice/swe.png', 'voice/rom.png', 'voice/tur.png', 'voice/alb.png', 'voice/mal.png', 'voice/fin.png', 'voice/cyp.png', 'voice/avs.png', 'voice/fra.png', 'voice/bos.png', 'voice/nor.png', 'voice/por.png', 'voice/aze.png', 'voice/spa.png', 'voice/bel.png', 'voice/san.png', 'voice/?.png', 'voice/isr.png', 'voice/uk.png', 'voice/ger.png', 'voice/gre.png', 'voice/den.png', 'voice/cze.png', 'voice/pol.png', 'voice/kos.png', 'voice/bul.png', 'voice/net.png', 'voice/ire.png', 'voice/lit.png', 'voice/ukr.png'];
+           var listimg=['voice/swe.png', 'voice/rom.png', 'voice/tur.png', 'voice/alb.png', 'voice/mal.png', 'voice/fin.png', 'voice/cyp.png', 'voice/avs.png', 'voice/fra.png', 'voice/bos.png', 'voice/nor.png', 'voice/por.png', 'voice/aze.png', 'voice/spa.png', 'voice/bel.png', 'voice/san.png', 'voice/swi.png', 'voice/isr.png', 'voice/uk.png', 'voice/ger.png', 'voice/gre.png', 'voice/den.png', 'voice/cze.png', 'voice/pol.png', 'voice/kos.png', 'voice/bul.png', 'voice/net.png', 'voice/ire.png', 'voice/lit.png', 'voice/ukr.png'];
 
            var list3=[30];
            var list4=[30];
@@ -472,7 +472,7 @@ BE HONEST!
 
                list3[c] = list2[indexx];
                list4[c] = boyuk;
-               list5[c] = Math.floor( (boyuk / (Sweden + Romania + Turkey + Albania + Malta + Finland + Cyprus + Austra + France + Bosnia + Norway + Portugal + Azerbaijan + Spain + Belgium + San + Italy + Israel + UnitedK + Germany + Greece + Denmark + Czech + Poland + Kosovo + Bulgaria + Netherlands + Ireland + Moldova + Georgia)) * 100);
+               list5[c] = Math.floor( (boyuk / (Sweden + Romania + Turkey + Albania + Malta + Finland + Cyprus + Austra + France + Bosnia + Norway + Portugal + Azerbaijan + Spain + Belgium + San + Swit + Israel + UnitedK + Germany + Greece + Denmark + Czech + Poland + Kosovo + Bulgaria + Netherlands + Ireland + Lithuania + Ukraine)) * 100);
 
                list6[c] = listimg[indexx];
 
