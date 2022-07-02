@@ -199,17 +199,17 @@ BE HONEST!
    <div style="display: none; position: absolute; z-index: -5;">
                           <span id="avs">5</span>
                           <span id="isr">27</span>
-                          <span id="itl">0</span>
-                          <span id="san">18</span>
+                          <span id="swi">0</span>
+                          <span id="san">22</span>
                           <span id="nor">11</span>
                           <span id="fra">2</span>
                           <span id="fin">1</span>
                           <span id="rom">0</span>
                           <span id="cze">8</span>
                           <span id="kos">17</span>
-                          <span id="bul">0</span>
+                          <span id="bul">5</span>
                           <span id="net">20</span>
-                          <span id="mol">17</span>
+                          <span id="lit">17</span>
       
    </div>
 
@@ -222,14 +222,14 @@ BE HONEST!
        var France = Number(fra.textContent);
        var Norway = Number(nor.textContent);
        var San = Number(san.textContent);
-       var Italy = Number(itl.textContent);
+       var Swit = Number(swi.textContent);
        var Israel = Number(isr.textContent);
        var Austra = Number(avs.textContent);
        var Czech = Number(cze.textContent);
        var Kosovo = Number(kos.textContent);
        var Bulgaria = Number(bul.textContent);
        var Netherlands = Number(net.textContent);
-       var Moldova = Number(mol.textContent);
+       var Lithuania = Number(lit.textContent);
         
        var Img1 = document.getElementById('img1');
        var Img2 = document.getElementById('img2');
@@ -245,11 +245,11 @@ BE HONEST!
        var Img12 = document.getElementById('img12');
        var Img13 =  document.getElementById('img13');
 
-           var list1=[Romania, Finland, France, Norway, San, Italy, Israel, Austra, Czech, Kosovo, Bulgaria, Netherlands, Moldova];
+           var list1=[Romania, Finland, France, Norway, San, Swit, Israel, Austra, Czech, Kosovo, Bulgaria, Netherlands, Lithuania];
 
-           var list2=["Romania - VKS", "Finland - Fərail Londonlu", "France - Mirzə", "Norway - Nərmin", "San Marino - Teo Terlano", "?  -  ?", "Israel - Səfaşka", "Austria - Elvin", "Czech Republic - WillieRn", "Kosovo - Ömerica", "Bulgaria - AR", "The Netherlands - Muradfzd", "Lithuania - Zef Del Rey"];
+           var list2=["Romania - VKS", "Finland - Fərail Londonlu", "France - Mirzə", "Norway - Nərmin", "San Marino - Teo Terlano", "Switzerland  -  NzzzL", "Israel - Səfaşka", "Austria - Elvin", "Czech Republic - WillieRn", "Kosovo - Ömerica", "Bulgaria - AR", "The Netherlands - Muradfzd", "Lithuania - Zef Del Rey"];
 
-           var listimg=['voice/rom.png', 'voice/fin.png', 'voice/fra.png', 'voice/nor.png', 'voice/san.png', 'voice/?.png', 'voice/isr.png', 'voice/avs.png', 'voice/cze.png', 'voice/kos.png', 'voice/bul.png', 'voice/net.png', 'voice/lit.png'];
+           var listimg=['voice/rom.png', 'voice/fin.png', 'voice/fra.png', 'voice/nor.png', 'voice/san.png', 'voice/swi.png', 'voice/isr.png', 'voice/avs.png', 'voice/cze.png', 'voice/kos.png', 'voice/bul.png', 'voice/net.png', 'voice/lit.png'];
 
            var list3=[13];
            var list4=[13];
@@ -267,7 +267,7 @@ BE HONEST!
 
                list3[c] = list2[indexx];
                list4[c] = boyuk;
-               list5[c] = Math.floor( (boyuk / (Romania + Finland + France + Norway + San + Italy + Israel + Austra + Czech + Kosovo + Bulgaria + Netherlands + Moldova)) * 100);
+               list5[c] = Math.floor( (boyuk / (Romania + Finland + France + Norway + San + Swit + Israel + Austra + Czech + Kosovo + Bulgaria + Netherlands + Lithuania)) * 100);
 
                list6[c] = listimg[indexx];
 
