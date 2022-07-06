@@ -139,15 +139,16 @@
             <span id="f11" class="faiz" >25%</span>
             <span id="p11">1.2</span>
           </div>
-
+	   
           <div class="divler">
         
             <span class="sira">12</span>
-            <span class="td1"><img src="voice\bos.png" id="img12"></span>
+            <span class="td1"><img src="voice\mar.png" id="img12"></span>
             <span class="td2" id="c12">United Kingdom - ilham - angel</span>
             <span id="f12" class="faiz" >25%</span>
             <span id="p12">1.2</span>
           </div>
+
 
    </div>
 
@@ -193,7 +194,6 @@ BE HONEST!
 
    <div style="display: none; position: absolute; z-index: -5;">
                           
-                          <span id="ger">14</span>
                           <span id="uk">15</span>
                           <span id="bel">19</span>
                           <span id="por">18</span>
@@ -205,6 +205,7 @@ BE HONEST!
                           <span id="pol">4</span>
                           <span id="ire">12</span>
                           <span id="itl">0</span>
+                          <span id="mar">0</span>
       
    </div>
 
@@ -219,11 +220,11 @@ BE HONEST!
        var Portugal = Number(por.textContent);
        var Belgium = Number(bel.textContent);
        var UnitedK = Number(uk.textContent);
-       var Germany = Number(ger.textContent);
        var Denmark = Number(den.textContent);
        var Poland = Number(pol.textContent);
        var Ireland = Number(ire.textContent);
        var Italy = Number(itl.textContent);
+       var Marrakesh = Number(mar.textContent);
         
        var Img1 = document.getElementById('img1');
        var Img2 = document.getElementById('img2');
@@ -236,12 +237,12 @@ BE HONEST!
        var Img9 =  document.getElementById('img9');
        var Img10 =  document.getElementById('img10');
        var Img11 =  document.getElementById('img11');
-       var Img12 = document.getElementById('img12');
+       var Img12 =  document.getElementById('img12');
 
-           var list1=[Turkey, Malta, Cyprus, Bosnia, Portugal, Belgium, UnitedK, Germany, Denmark, Poland, Ireland, Italy];
+           var list1=[Turkey, Malta, Cyprus, Bosnia, Portugal, Belgium, UnitedK, Marrakesh, Denmark, Poland, Ireland, Italy];
 
-           var list2=["Turkey - Əli Hüseyn","Malta - Ilsvami", "Cyprus - Möhsüm", "Bosnia and Herzogovina - Nargiz", "Portugal - Khan Terrero", "Belgium - Memo", "United Kingdom - Aysu", "Germany - Nihad", "Denmark - Bəhruz", "Poland - EFO", "Ireland - Ibrhmlx", "Italy - Salima"];
-           var listimg=['voice/tur.png', 'voice/mal.png', 'voice/cyp.png', 'voice/bos.png', 'voice/por.png', 'voice/bel.png', 'voice/uk.png', 'voice/ger.png', 'voice/den.png', 'voice/pol.png', 'voice/ire.png', 'voice/itl.png'];
+           var list2=["Turkey - Əli Hüseyn","Malta - Ilsvami", "Cyprus - Möhsüm", "Bosnia and Herzogovina - Nargiz", "Portugal - Khan Terrero", "Belgium - Memo", "United Kingdom - Aysu", "Marrakesh - Mehman", "Denmark - Bəhruz", "Poland - EFO", "Ireland - Ibrhmlx", "Italy - Salima"];
+           var listimg=['voice/tur.png', 'voice/mal.png', 'voice/cyp.png', 'voice/bos.png', 'voice/por.png', 'voice/bel.png', 'voice/uk.png', 'voice/mar.png', 'voice/den.png', 'voice/pol.png', 'voice/ire.png', 'voice/itl.png'];
            var list3=[12];
            var list4=[12];
            var list5=[12];
@@ -258,7 +259,7 @@ BE HONEST!
 
                list3[c] = list2[indexx];
                list4[c] = boyuk;
-               list5[c] = Math.floor( (boyuk / (Turkey + Malta + Cyprus + Bosnia + Portugal + Belgium + UnitedK + Germany + Denmark + Poland + Ireland + Italy)) * 100);
+               list5[c] = Math.floor( (boyuk / (Turkey + Malta + Cyprus + Bosnia + Portugal + Belgium + UnitedK + Marrakesh + Denmark + Poland + Ireland + Italy)) * 100);
 
                list6[c] = listimg[indexx];
 
