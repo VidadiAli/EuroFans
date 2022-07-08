@@ -110,6 +110,7 @@ body{
 	margin: .2rem 1rem;
         padding-left: 15px;
 	text-align: left;
+        cursor: pointer;
 }
 #div3 .winnelik{
 	background: rgb(207, 235, 255);
