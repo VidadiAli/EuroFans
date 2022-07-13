@@ -141,12 +141,19 @@
           </div>
 	   
           <div class="divler">
-        
             <span class="sira">12</span>
             <span class="td1"><img src="voice\mar.png" id="img12"></span>
             <span class="td2" id="c12">United Kingdom - ilham - angel</span>
             <span id="f12" class="faiz" >25%</span>
             <span id="p12">1.2</span>
+          </div>
+          
+          <div class="divler">
+            <span class="sira">13</span>
+            <span class="td1"><img src="voice\mar.png" id="img13"></span>
+            <span class="td2" id="c13">United Kingdom - ilham - angel</span>
+            <span id="f13" class="faiz" >25%</span>
+            <span id="p13">1.2</span>
           </div>
 
 
@@ -206,6 +213,7 @@ BE HONEST!
                           <span id="ire">11</span>
                           <span id="itl">0</span>
                           <span id="mor">9</span>
+                          <span id="ger">0</span>
       
    </div>
 
@@ -225,6 +233,7 @@ BE HONEST!
        var Ireland = Number(ire.textContent);
        var Italy = Number(itl.textContent);
        var Morocco = Number(mor.textContent);
+       var Germany = Number(ger.textContent);
         
        var Img1 = document.getElementById('img1');
        var Img2 = document.getElementById('img2');
@@ -238,17 +247,18 @@ BE HONEST!
        var Img10 =  document.getElementById('img10');
        var Img11 =  document.getElementById('img11');
        var Img12 =  document.getElementById('img12');
+       var Img13 =  document.getElementById('img13');
 
-           var list1=[Turkey, Malta, Cyprus, Bosnia, Portugal, Belgium, UnitedK, Morocco, Denmark, Poland, Ireland, Italy];
+           var list1=[Turkey, Malta, Cyprus, Bosnia, Portugal, Belgium, UnitedK, Morocco, Denmark, Poland, Ireland, Italy, Germany];
 
-           var list2=["Turkey - Əli Hüseyn","Malta - Ilsvami", "Cyprus - Möhsüm", "Bosnia and Herzogovina - Nargiz", "Portugal - Khan Terrero", "Belgium - Memo", "United Kingdom - Aysu", "Morocco - Mehman", "Denmark - Bəhruz", "Poland - EFO", "Ireland - Ibrhmlx", "Italy - Salima"];
-           var listimg=['voice/tur.png', 'voice/mal.png', 'voice/cyp.png', 'voice/bos.png', 'voice/por.png', 'voice/bel.png', 'voice/uk.png', 'voice/mor.png', 'voice/den.png', 'voice/pol.png', 'voice/ire.png', 'voice/itl.png'];
-           var list3=[12];
-           var list4=[12];
-           var list5=[12];
-           var list6=[12];
-           var boyuk=0, indexx=0, n=12, c=0, evez1, evez2, evez3;
-           for(var i = 0; i<12; i++){
+           var list2=["Turkey - Əli Hüseyn","Malta - Ilsvami", "Cyprus - Möhsüm", "Bosnia and Herzogovina - Nargiz", "Portugal - Khan Terrero", "Belgium - Memo", "United Kingdom - Aysu", "Morocco - Mehman", "Denmark - Bəhruz", "Poland - EFO", "Ireland - Ibrhmlx", "Italy - Salima", "Germany - Fortem Singer"];
+           var listimg=['voice/tur.png', 'voice/mal.png', 'voice/cyp.png', 'voice/bos.png', 'voice/por.png', 'voice/bel.png', 'voice/uk.png', 'voice/mor.png', 'voice/den.png', 'voice/pol.png', 'voice/ire.png', 'voice/itl.png', 'voice/ger.png];
+           var list3=[13];
+           var list4=[13];
+           var list5=[13];
+           var list6=[13];
+           var boyuk=0, indexx=0, n=13, c=0, evez1, evez2, evez3;
+           for(var i = 0; i<13; i++){
             for(var j = 0; j<n; j++){
               if(list1[j]>=boyuk)
                 {
@@ -259,7 +269,7 @@ BE HONEST!
 
                list3[c] = list2[indexx];
                list4[c] = boyuk;
-               list5[c] = Math.floor( (boyuk / (Turkey + Malta + Cyprus + Bosnia + Portugal + Belgium + UnitedK + Morocco + Denmark + Poland + Ireland + Italy)) * 100);
+               list5[c] = Math.floor( (boyuk / (Turkey + Malta + Cyprus + Bosnia + Portugal + Belgium + UnitedK + Morocco + Denmark + Poland + Ireland + Italy, Germany)) * 100);
 
                list6[c] = listimg[indexx];
 
@@ -291,6 +301,7 @@ BE HONEST!
          f10.textContent=list5[9]+" %";
          f11.textContent=list5[10]+" %";
          f12.textContent=list5[11]+" %";
+         f13.textContent=list5[12]+" %";
 
 
          p1.textContent= 120-list4[0] ;
@@ -305,7 +316,7 @@ BE HONEST!
          p10.textContent= 120-list4[9] ;
          p11.textContent= 120-list4[10] ;
          p12.textContent= 120-list4[11] ;
-
+         p13.textContent= 120-list4[12] ;
 
          c1.textContent=list3[0];
          c2.textContent=list3[1];
@@ -319,6 +330,8 @@ BE HONEST!
          c10.textContent=list3[9];
          c11.textContent=list3[10];
          c12.textContent=list3[11];
+         c13.textContent=list3[12];
+
 
          Img1.src=list6[0];
          Img2.src=list6[1];
@@ -332,6 +345,7 @@ BE HONEST!
          Img10.src=list6[9];
          Img11.src=list6[10];
          Img12.src=list6[11];
+         Img13.src=list6[12];
          
 
          spn.textContent=list3[0];
