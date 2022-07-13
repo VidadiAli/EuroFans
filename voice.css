@@ -134,9 +134,9 @@ body{
 #div3 .td2{
 	width: 31rem;
 	margin: .2rem 1rem;
-        padding-left: 15px;
+    padding-left: 15px;
 	text-align: left;
-        cursor: pointer;
+	cursor: pointer;
 }
 #div3 .winnelik{
 	background: rgb(207, 235, 255);
@@ -158,6 +158,7 @@ body{
 	width: 100%;
 	position: absolute;
 	top: 23.4rem;
+	display: none;
 }
 #semiler a{
 	display: inline-block;
@@ -170,7 +171,6 @@ body{
 }
 #semiler #bigg{
 	width: 100%;
-	display: none;
 }
 
 
@@ -280,17 +280,17 @@ body{
 }
 
 @media (max-width: 450px){
+	#div3{
+		position: relative;
+		top: 2.5rem;
+	}
 	#semiler{
-		top: 13rem;
+		top: 15rem;
 	}
 	#div2 ul li a{
 	    padding: .2rem .7rem;
 	    margin: .2rem .5rem;
     }
-	#div3{
-		position: relative;
-		top: 2.5rem;
-	}
 	
 	#div3 .td2{
 	    width: 57%;
@@ -324,7 +324,7 @@ body{
 
 @media (max-width: 380px){
 	#semiler{
-		top: 14.95rem;
+		top: 16rem;
 	}
 	#semiler a{
 		font-size: .6rem;
@@ -342,10 +342,4 @@ body{
 	#div3 .td2{
 	    width: 50%;
     }
-}
-
-@media (max-width: 340px){
-	#semiler{
-		top: 13.7rem;
-	}
 }
