@@ -13,9 +13,8 @@ body{
 	left: 0;
 	width: 80%;
 	margin: 2rem 10%;
-	padding: 5rem auto;
+	padding: 2rem auto;
 	background: white;
-	height: 40%;
 	z-index: 3000;
 }
 .ekran a{
