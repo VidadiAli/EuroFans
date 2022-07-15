@@ -9,12 +9,13 @@ body{
 }
 .ekran{
 	position: absolute;
-	top: 0;
+	top: 2rem;
 	left: 0;
-	width: 100%;
+	width: 80%;
+	margin: 2rem 10%;
 	padding: 5rem auto;
 	background: white;
-	height: 100%;
+	height: 40%;
 	z-index: 3000;
 }
 .ekran a{
