@@ -172,10 +172,11 @@ body{
 	color: blueviolet;
 }
 #semiler #bigg{
-	width: 100%;
+	width: 50%;
         background: yellow; 
         text-align: center; 
         color: black; 
+	margin: 1rem 25%;
         padding: 1.5rem .8rem; 
         text-decoration: none; 
         transform: rotate(45deg);
