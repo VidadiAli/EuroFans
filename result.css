@@ -1,0 +1,578 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: serif;
+	font-size: 1rem;
+}
+#sosial{
+	display: flex;
+	position: absolute;
+	left: 60%;
+	top: 5rem;
+}
+#sosial ul{
+	display: flex;
+}
+#sosial ul li{
+	display: flex;
+	list-style: none;
+	margin: 0 .5rem;
+}
+#sosial ul li a{
+	color: black;
+	text-decoration: none;
+	padding: 5px;
+}
+#sosial ul li a i{
+	font-size: 1.5rem;
+}
+#sosial ul li a i:hover{
+	color: red;
+}
+#div1 img{
+	position: relative;
+	left: 45%;
+}
+#div2{
+	display: flex;
+	margin: 1rem 10rem;
+	padding: 2rem 0;
+	border: 1px solid gray;
+	z-index: 10;
+	box-shadow: 5px 5px 5px 5px gray;
+}
+#div2 ul{
+	display: flex;
+	position: relative;
+	left: 13%;
+}
+#div2 ul li{
+	display: flex;
+	list-style: none;
+}
+#div2 ul li a{
+	font-size: 1.2rem;
+	padding: .8rem 3rem;
+	color: black;
+	text-decoration: none;
+    font-weight: bold;
+}
+#div2 ul li a:hover{
+    background: red;
+    border-radius: 1rem;
+    color: white;
+}
+#h1{
+	position: relative;
+	bottom: 1.5rem;
+	font-size: 1.5rem;
+}
+
+
+
+
+
+
+.countries_ana{
+		width: 96%;
+		background: gray;
+		margin: 2rem 2%;
+		padding: 2%;
+	}
+	.countries_ana .countries{
+		display: inline-block;
+		width: 3rem;
+		height: 2rem;
+		margin: .3rem;
+	}
+	.countries_ana .countries img{
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+	.flags{
+		width: 40%;
+		height: 36rem;
+		margin: 2%;
+		margin-top: 2rem;
+		position: relative;
+		left: 0;
+		top: 0;
+		background: black;
+	}
+	.flags i{
+		color: white;
+		font-size: 2rem;
+		z-index: 1000;
+		position: absolute;
+	}
+	.ox1{
+		left: 52%;
+		top: 65%;
+	}
+	.ox2{
+		transform: rotate(180deg);
+		left: 52%;
+		top: 33%;
+	}
+	.ox3{
+		transform: rotate(90deg);
+		left: 38%;
+		top: 50%;
+	}
+	.ox4{
+		transform: rotate(270deg);
+		left: 68%;
+		top: 50%;
+	}
+
+	.ox5{
+		transform: rotate(45deg);
+		left: 41.5%;
+		top: 61%;
+	}
+	.ox6{
+		transform: rotate(225deg);
+		left: 63.5%;
+		top: 39%;
+	}
+	.ox7{
+		transform: rotate(135deg);
+		left: 41%;
+		top: 39%;
+	}
+	.ox8{
+		transform: rotate(315deg);
+		left: 63.5%;
+		top: 61%;
+	}
+	.flags .center{
+		position: absolute;
+		top: 44%;
+		left: 46%;
+		width: 6rem;
+        height: 6rem;
+	}
+	.flags .center img{
+		width: 100%;
+		height: 100%;
+        box-shadow: 0 0 50px white;
+		border-radius: 50%;
+	}
+	.flags .center span{
+		display: inline-block;
+		text-align: center;
+		position: absolute;
+		top: 1.3rem;
+		right: 1.7rem;
+		background: white;
+		opacity: .8;
+		width: 2.5rem;
+		height: 2.5rem;
+		padding-top: .4rem;
+		border-radius: 50%;
+		font-size: 120%;
+		font-weight: 900;
+	}
+	.flags .other{
+		width: 3.7rem;
+		height: 3.7rem;
+		position: absolute;
+	}
+
+	.flags .other img{
+		width: 100%;
+		height: 100%;
+		border-radius: 50%;
+	}
+	.flags .other span{
+		display: inline-block;
+		text-align: center;
+		position: absolute;
+		font-size: 100%;
+		font-weight: 900;
+		top: -1.1rem;
+		left: 3rem;
+		background: white;
+		opacity: .8;
+		width: 1.5rem;
+		height: 1.5rem;
+		border-radius: 50%;
+	}
+	.flags .other1{
+		top: 10%;
+		left: 49%;
+	}
+	.flags .other2{
+		top: 18%;
+		left: 70%;
+	}
+	.flags .other3{
+		top: 35%;
+		left: 83%;
+	}
+	.flags .other4{
+		top: 57%;
+		left: 83%;
+	}
+	.flags .other5{
+		top: 77%;
+		left: 72%;
+	}
+	.flags .other6{
+		top: 85%;
+		left: 49%;
+	}
+	.flags .other7{
+		top: 77%;
+		left: 27%;
+	}
+	.flags .other8{
+		top: 57%;
+		left: 13%;
+	}
+	.flags .other9{
+		top: 35%;
+		left: 13%;
+	}
+	.flags .other10{
+		top: 18%;
+		left: 27%;
+	}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 560px){
+	body{
+		border: none;
+	}
+	#sosial{
+		top: 2rem;
+		left: 50%;
+	}
+	#div1 img{
+		left: 8%;
+	}
+	#div2{
+		width: 94%;
+		margin: 3%;
+		padding: 1%;
+		position: relative;
+		bottom: 1.5rem;
+	}
+	#div2 ul{
+		padding: 0;
+		margin: 0;
+		left: 5%;
+	}
+    #div2 ul li a{
+    	font-size: .7rem;
+	    padding: .5rem 1.2rem;
+	    margin: .5rem .8rem;
+    }
+	#h1{
+		position: relative;
+		bottom: 2rem;
+		font-size: 1.5rem;
+	}
+	.countries_ana{
+		width: 96%;
+		background: gray;
+		margin: 2rem 2%;
+		padding: 2%;
+	}
+	.countries_ana .countries{
+		display: inline-block;
+		width: 3rem;
+		height: 2rem;
+		margin: .3rem;
+	}
+	.countries_ana .countries img{
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+	.flags{
+		width: 96%;
+		height: 30rem;
+		margin: 2%;
+		margin-top: 2rem;
+		position: relative;
+		left: 0;
+		top: 0;
+		background: black;
+	}
+	.flags i{
+		color: white;
+		font-size: 2rem;
+		z-index: 1000;
+		position: absolute;
+	}
+	.ox1{
+		left: 52%;
+		top: 65%;
+	}
+	.ox2{
+		transform: rotate(180deg);
+		left: 52%;
+		top: 33%;
+	}
+	.ox3{
+		transform: rotate(90deg);
+		left: 38%;
+		top: 50%;
+	}
+	.ox4{
+		transform: rotate(270deg);
+		left: 68%;
+		top: 50%;
+	}
+
+	.ox5{
+		transform: rotate(45deg);
+		left: 41.5%;
+		top: 61%;
+	}
+	.ox6{
+		transform: rotate(225deg);
+		left: 63.5%;
+		top: 39%;
+	}
+	.ox7{
+		transform: rotate(135deg);
+		left: 41%;
+		top: 39%;
+	}
+	.ox8{
+		transform: rotate(315deg);
+		left: 63.5%;
+		top: 61%;
+	}
+	.flags .center{
+		position: absolute;
+		top: 42%;
+		left: 45%;
+		width: 6rem;
+        height: 6rem;
+	}
+	.flags .center img{
+		width: 100%;
+		height: 100%;
+        box-shadow: 0 0 50px white;
+		border-radius: 50%;
+	}
+	.flags .center span{
+		display: inline-block;
+		text-align: center;
+		position: absolute;
+		top: 1.3rem;
+		right: 1.7rem;
+		background: white;
+		opacity: .8;
+		width: 2.5rem;
+		height: 2.5rem;
+		padding-top: .4rem;
+		border-radius: 50%;
+		font-size: 120%;
+		font-weight: 900;
+	}
+	.flags .other{
+		width: 3.7rem;
+		height: 3.7rem;
+		position: absolute;
+	}
+
+	.flags .other img{
+		width: 100%;
+		height: 100%;
+		border-radius: 50%;
+	}
+	.flags .other span{
+		display: inline-block;
+		text-align: center;
+		position: absolute;
+		font-size: 100%;
+		font-weight: 900;
+		top: -1.1rem;
+		left: 3rem;
+		background: white;
+		opacity: .8;
+		width: 1.5rem;
+		height: 1.5rem;
+		border-radius: 50%;
+	}
+	.flags .other1{
+		top: 10%;
+		left: 49%;
+	}
+	.flags .other2{
+		top: 18%;
+		left: 70%;
+	}
+	.flags .other3{
+		top: 35%;
+		left: 83%;
+	}
+	.flags .other4{
+		top: 57%;
+		left: 83%;
+	}
+	.flags .other5{
+		top: 77%;
+		left: 72%;
+	}
+	.flags .other6{
+		top: 85%;
+		left: 49%;
+	}
+	.flags .other7{
+		top: 77%;
+		left: 27%;
+	}
+	.flags .other8{
+		top: 57%;
+		left: 13%;
+	}
+	.flags .other9{
+		top: 35%;
+		left: 13%;
+	}
+	.flags .other10{
+		top: 18%;
+		left: 27%;
+	}
+	.puanlar{
+		margin: .2rem;
+		padding: 1.5rem 0;
+		background: gray;
+	}
+	.puanlar img{
+       width: 8.8%;
+       height: 20px;
+       margin: .2%;
+	}
+	.puanlar span{
+		color: white;
+		margin: .3rem;
+	}
+}
+
+@media (max-width: 500px){
+    #div2 ul li a{
+	    padding: .5rem 1rem;
+	    margin: .2rem .5rem;
+    }
+}
+
+@media (max-width: 450px){
+	#div2 ul li a{
+	    padding: .2rem .7rem;
+	    margin: .2rem .5rem;
+    }
+    h1{
+    	font-size: 1.2rem;
+    }
+    .flags .center{
+    	top: 43%;
+    }
+	.ox3{
+		transform: rotate(90deg);
+		left: 36%;
+		top: 50%;
+	}
+	.ox4{
+		transform: rotate(270deg);
+		left: 70%;
+		top: 50%;
+	}
+	.ox7{
+		transform: rotate(135deg);
+		left: 42%;
+		top: 39%;
+	}
+    .flags .center span{
+    	right: 1.4rem;
+    }
+}
+
+@media (max-width: 400px){
+	#div2 ul li a{
+	    padding: .2rem .5rem;
+	    margin: .2rem .4rem;
+    }
+    .flags{
+    	height: 27rem;
+    }
+    .flags .center{
+    	top: 44%;
+    }
+    .flags .center{
+    	width: 5rem;
+    	height: 5rem;
+    }
+    .flags .other{
+    	width: 3rem;
+    	height: 3rem;
+    }
+	.flags .other1{
+		left: 44%;
+	}
+	.flags .other2{
+		left: 65%;
+	}
+	.flags .other3{
+		left: 78%;
+	}
+	.flags .other4{
+		left: 78%;
+	}
+	.flags .other5{
+		left: 67%;
+	}
+	.flags .other6{
+		left: 44%;
+	}
+	.flags .other7{
+		left: 22%;
+	}
+	.flags .other8{
+		left: 8%;
+	}
+	.flags .other9{
+		left: 8%;
+	}
+	.flags .other10{
+		left: 22%;
+	}
+	.flags .other1{
+		top: 12%;
+	}
+	.flags .other5{
+		top: 75%;
+	}
+	.flags .other6{
+		top: 81%;	}
+	.flags .other7{
+		top: 75%;
+	}
+}
+
+@media (max-width: 380px){
+
+    .flags .center span{
+    	right: 1.25rem;
+    }
+	#div2 ul li a{
+	    font-size: .7rem;
+	    padding: .2rem .3rem;
+	    margin: .2rem .3rem;
+    }
+}
