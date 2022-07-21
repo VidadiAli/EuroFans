@@ -161,7 +161,6 @@ body{
 	width: 100%;
 	position: absolute;
 	top: 23.4rem;
-        display: none;
 }
 #semiler a{
 	display: inline-block;
@@ -174,6 +173,12 @@ body{
 }
 #semiler #bigg{
 	width: 100%;
+        background: yellow; 
+        text-align: center; 
+        color: black; 
+        padding: 1.5rem .8rem; 
+        text-decoration: none; 
+        transform: rotate(45deg);
 }
 
 
