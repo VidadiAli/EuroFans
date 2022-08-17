@@ -375,6 +375,10 @@
 	.odds .ooddss .ooddss_box div span{
 		font-size: 80%;
 	}
+	.profile .img_out{
+		width: 11rem;
+		height: 11rem;
+	}
 }
 
 @media (max-width: 440px){
