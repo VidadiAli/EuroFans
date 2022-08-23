@@ -1,0 +1,401 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+
+.sosial{
+	width: 10rem;
+	position: absolute;
+	left: calc(100% - 12rem);
+	top: 2rem;
+}
+.sosial ul{
+	width: 100%;
+}
+.sosial ul li{
+	float: left;
+	list-style: none;
+	width: calc(100% / 3);
+}
+.sosial ul li a{
+	color: black;
+	text-decoration: none;
+	font-size: 1.6rem;
+	transition: .3s;
+}
+.sosial ul li a:hover{
+	color: gray;
+}
+
+.profile{
+	width: 100%;
+}
+.profile .img_out{
+	width: 12rem;
+	height: 12rem;
+	margin: 1rem calc(50% - 5rem);
+}
+.profile img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.last_winner{
+	position: absolute;
+	top: 3rem;
+	left: 4rem;
+	width: 10rem;
+	margin: .5rem;
+}
+.last_winner .winner_out{
+	width: 15rem;
+	height: 10rem;
+	position: relative;
+}
+.last_winner .winner_out img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.last_winner .winner_out .word{
+	position: absolute;
+	top: 0;
+	display: grid;
+	align-items: flex-start;
+	background: black;
+	opacity: .3;
+	height: 100%;
+	width: 100%;
+}
+.last_winner .winner_out .word span{
+	font-family: serif;
+	padding: .5rem;
+	color: white;
+	font-weight: 700;
+}
+
+.editions{
+	width: 100%;
+	padding: 1rem 0;
+	margin: 1rem 0;
+}
+.editions a{
+	display: inline-block;
+	position: relative;
+	width: 10rem;
+	margin: .5rem 0;
+	padding: .5rem 1rem;
+	text-decoration: none;
+	color: black;
+	text-align: center;
+	background: red;
+	color: white;
+	font-weight: 900;
+	left: calc(50% - 10rem);
+	border-radius: 1rem;
+	transition: .3s;
+}
+.editions a:hover{
+	background: rgb(220, 0, 0);
+}
+
+.h1{
+    font-family: 'Crimson Text', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-align: center;
+    font-weight: 900;
+}
+
+.navbar1{
+	display: flex;
+	width: 90%;
+	margin: 1rem auto;
+	margin-top: 3rem;
+	border-bottom: 3px solid skyblue;
+}
+.navbar1 ul{
+	display: flex;
+	padding: 0;
+    width: 100%;
+}
+.navbar1 ul li{
+	display: flex;
+	list-style: none;
+	width: calc(100% / 3);
+}
+.navbar1 ul li a{
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+	font-size: 170%;
+	color: black;
+	width: 90%;
+	margin: 0 auto;
+	padding: .5rem 0;
+	font-family: serif;
+	text-align: center;
+	border-top: 1px solid red;
+	transition: .3s;
+}
+.navbar1 ul li a:hover{
+	background: red;
+	color: white;
+}
+
+
+.odds{
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+.odds .h2{
+    font-family: 'Crimson Text', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-align: center;
+    font-weight: 900;
+}
+
+.odds .bookmakers{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	margin-top: 3rem;
+}
+.odds .bookmakers span{
+    display: inline-block;
+	position: relative;
+	width: 20rem;
+	margin: .5rem 0;
+	padding: .5rem .5rem;
+	text-decoration: none;
+	color: black;
+	background: rgb(250, 250, 250);
+	text-align: center;
+	font-weight: 900;
+	left: calc(50% - 20rem);
+	border-radius: 1rem;
+	border-bottom: 1px solid black;
+}
+
+
+.odds .qosha{
+	float: left;
+}
+.odds .ooddss{
+	width: 66%;
+	padding: .5rem;
+	background: rgb(220, 220, 220);
+	margin: 2%;
+}
+.odds .ooddss .ooddss_box{
+	width: 99%;
+	margin: .5%;
+	padding: .5rem;
+	border-radius: .5rem;
+}
+.odds .ooddss .ooddss_box div {
+	margin: .5rem 0;
+	padding: .2rem;
+	background: #CEFBFF;
+}
+.odds .ooddss .ooddss_box div span{
+	display: inline-block;
+	font-family: serif;
+	text-align: center;
+}
+.odds .ooddss .ooddss_box div .span_ph{
+	width: 3rem;
+	height: 2rem;
+}
+.odds .ooddss .ooddss_box div .span_ph img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.odds .ooddss .ooddss_box div .span_sira{
+	width: 2rem;
+}
+.odds .ooddss .ooddss_box div .span_olke{
+	text-align: left;
+	width: calc(100% - 13rem);
+	padding:0 1rem;
+	border-bottom: 1px solid black;
+}
+.odds .ooddss .ooddss_box div .span_bal{
+	width: 3rem;
+}
+.odds .ooddss .ooddss_box div .span_ball{
+	width: 3rem;
+}
+
+
+.odds .photo{
+	width: 29%;
+	padding: 0;
+	margin: 1.5% .5%;
+}
+.odds .photo .divvv{
+	width: 100%;
+	margin: 2% 0;
+	height: 8rem;
+}
+.odds .photo .divvv .embed1{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+
+
+
+
+@media (max-width: 950px){
+	.sosial{
+	    left: calc(50% - 5rem);
+	    top: 4rem;
+    }
+    .profile .img_out{
+	    margin: 1rem 0;
+	    margin-left: calc(100% - 18rem);
+	    margin-top: 2rem;
+    }
+    .last_winner{
+    	top: 3rem;
+    	left: 3rem;	
+    	width: 13rem;
+    }
+    .last_winner .winner_out{
+    	width: 13rem;
+    	height: 8rem;
+    }
+}
+
+
+
+@media(max-width: 650px){
+	.sosial{
+	    top: 11.3rem;
+    }
+	.profile .img_out{
+	    margin-top: 1rem;
+    }
+    .last_winner{
+    	top: 2rem;
+    	left: 3rem;	
+    	width: 15rem;
+    }
+    .last_winner .winner_out{
+    	width: 15rem;
+    	height: 8rem;
+    }
+    .odds .ooddss{
+    	width: 98%;
+    	margin: 1%;
+    }
+    .odds .photo{
+    	width: 70%;
+    	margin: 1rem 15%;
+    }
+    .odds .photo .divvv{
+    	height: 12rem;
+    }
+}
+
+@media(max-width: 605px){
+	.odds .bookmakers span{
+		margin: 0;
+		padding: 0;
+		left: 0;
+		width: 49%;
+		margin: .5rem .5%;
+		padding: .5rem 0;
+	}
+}
+
+@media (max-width: 555px){
+	.profile .img_out{
+	    margin-left: calc(52%);
+    }
+	.last_winner{
+		top: 2.5rem;
+    	left: 2rem;	
+    	width: calc(45% - 2rem);
+    }
+    .last_winner .winner_out{
+    	width: 100%;
+    	height: 7rem;
+    }
+    .odds .photo{
+    	width: 98%;
+    	margin: 1rem 1%;
+    }
+}
+
+@media(max-width: 500px){
+	.odds .ooddss .ooddss_box{
+		padding: 0;
+	}
+	.odds .ooddss .ooddss_box div span{
+		font-size: 80%;
+	}
+}
+
+@media (max-width: 440px){
+	.last_winner .winner_out{
+    	height: 6rem;
+    }
+    .odds .bookmakers span{
+    	font-size: 80%;
+    }
+    .odds .ooddss .ooddss_box div .span_ph{
+	    width: 2rem;
+	    height: 1.5rem;
+    }
+    .odds .ooddss .ooddss_box div .span_sira{
+	    width: 1rem;
+    }
+    .odds .ooddss .ooddss_box div .span_olke{
+	    width: calc(100% - 8.1rem);
+	    padding: 0;
+	    padding-left: .3rem;
+    }
+    .odds .ooddss .ooddss_box div .span_bal{
+	    width: 2rem;
+    }
+    .odds .ooddss .ooddss_box div .span_ball{
+	    width: 2rem;
+    }
+}
+
+@media(max-width: 380px){
+	.profile .img_out{
+	    margin-left: 50%;
+    }
+    .odds .bookmakers span{
+    	font-size: 75%;
+    }
+}
+
+@media(max-width: 360px){
+	.profile .img_out{
+	    margin-left: 45%;
+    }
+    .last_winner{
+    	left: 1rem;	
+    	width: calc(45% - 1rem);
+    }
+    .odds .bookmakers span{
+    	font-size: 70%;
+    }
+}
+
+
+@media(max-width: 330px){
+	.odds .ooddss .ooddss_box div span{
+		font-size: 75%;
+	}
+	.profile .img_out{
+		width: 11rem;
+		height: 11rem;
+	}
+}
