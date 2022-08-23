@@ -246,6 +246,12 @@
 }
 
 
+@media(max-width: 1100px){
+    .odds .photo .divvv{
+    	height: 14rem;
+    }
+}
+
 
 
 
@@ -267,6 +273,9 @@
     .last_winner .winner_out{
     	width: 13rem;
     	height: 8rem;
+    }
+    .odds .photo .divvv{
+    	height: 13rem;
     }
 }
 
