@@ -175,6 +175,14 @@
            <span class="span_bal" id="b11">0</span>
         </div>
 
+        <div id="div12">
+           <span class="span_sira" id="s12">12</span>
+           <span class="span_ph"><img src="voice\usa.png" id="p12"></span>
+           <span class="span_olke" id="o12">United States</span>
+           <span class="span_ball" id="t12">0</span>
+           <span class="span_bal" id="b12">0</span>
+        </div>
+
      </div>
 
 	</div>
@@ -204,6 +212,7 @@
     <span id="kos">5</span>
     <span id="cub">0</span>
     <span id="cal">0</span>
+    <span id="usa">0</span>
 
 
   </div>
@@ -223,6 +232,7 @@
       var Kosova = Number(kos.textContent);
       var Cuba = Number(cub.textContent);
       var Caledonia = Number(cal.textContent);
+      var Usa = Number(usa.textContent);
 
 
       var Img1 = document.getElementById('p1');
@@ -236,20 +246,21 @@
       var Img9 = document.getElementById('p9');
       var Img10 = document.getElementById('p10');
       var Img11 = document.getElementById('p11');
+      var Img12 = document.getElementById('p12');
 
-      var list1 = [Sweden, Finland, Norway, United, Australia, Croatia, Ireland, Israel, Kosova, Cuba, Caledonia];
+      var list1 = [Sweden, Finland, Norway, United, Australia, Croatia, Ireland, Israel, Kosova, Cuba, Caledonia, Usa];
 
-      var list2 = ["Sweden - T.I.ViAl", "Finland - Fərail", "Norway - Narmin", "United Kingdom - Ilsvami", "Australia - Husso", "Croatia - Tarlan", "Ireland - Zhala", "Israel - Sefashka", "Kosova - Ömerica", "Cuba - Orxan", "New Caledonia - Khan Terrero"];
+      var list2 = ["Sweden - T.I.ViAl", "Finland - Fərail", "Norway - Narmin", "United Kingdom - Ilsvami", "Australia - Husso", "Croatia - Tarlan", "Ireland - Zhala", "Israel - Sefashka", "Kosova - Ömerica", "Cuba - Orxan", "New Caledonia - Khan Terrero" "United States - Behruz"];
 
-      var listimg = ['voice/swe.png', 'voice/fin.png', 'voice/nor.png', 'voice/uk.png', 'voice/aus.png', 'voice/cro.png', 'voice/ire.png', 'voice/isr.png', 'voice/kos.png', 'voice/cub.png', 'voice/cal.png'];
+      var listimg = ['voice/swe.png', 'voice/fin.png', 'voice/nor.png', 'voice/uk.png', 'voice/aus.png', 'voice/cro.png', 'voice/ire.png', 'voice/isr.png', 'voice/kos.png', 'voice/cub.png', 'voice/cal.png', 'voice/usa.png'];
 
 
-      var list3 = [11];
-      var list4 = [11];
-      var list5 = [11];
-      var list6 = [11];
-      var boyuk = 0, indexx = 0, n = 11, c = 0, evez1, evez2, evez3;
-      for (var i = 0; i < 11; i++) {
+      var list3 = [12];
+      var list4 = [12];
+      var list5 = [12];
+      var list6 = [12];
+      var boyuk = 0, indexx = 0, n = 12, c = 0, evez1, evez2, evez3;
+      for (var i = 0; i < 12; i++) {
         for (var j = 0; j < n; j++) {
           if (list1[j] >= boyuk) {
             boyuk = list1[j];
@@ -259,7 +270,7 @@
 
         list3[c] = list2[indexx];
         list4[c] = boyuk;
-        list5[c] = Math.floor((boyuk / (Sweden + Finland + Norway + Australia + Croatia + United + Israel + Kosova + Cuba + Caledonia)) * 100);
+        list5[c] = Math.floor((boyuk / (Sweden + Finland + Norway + Australia + Croatia + United + Israel + Kosova + Cuba + Caledonia + Usa)) * 100);
 
         list6[c] = listimg[indexx];
 
@@ -291,6 +302,7 @@
       t9.textContent = list5[8] + " %";
       t10.textContent = list5[9] + " %";
       t11.textContent = list5[10] + " %";
+      t12.textContent = list5[11] + " %";
 
 
       b1.textContent = 120 - list4[0];
@@ -304,6 +316,7 @@
       b9.textContent = 120 - list4[8];
       b10.textContent = 120 - list4[9];
       b11.textContent = 120 - list4[10];
+      b12.textContent = 120 - list4[11];
 
 
       o1.textContent = list3[0];
@@ -317,6 +330,7 @@
       o9.textContent = list3[8];
       o10.textContent = list3[9];
       o11.textContent = list3[10];
+      o12.textContent = list3[11];
 
       Img1.src = list6[0];
       Img2.src = list6[1];
@@ -329,6 +343,7 @@
       Img9.src = list6[8];
       Img10.src = list6[9];
       Img11.src = list6[10];
+      Img12.src = list6[11];
      
      spn.textContent = list3[0];
      
