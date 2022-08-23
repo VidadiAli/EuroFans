@@ -134,6 +134,14 @@
            <span class="span_bal" id="b6">0</span>
         </div>
 
+        <div id="div7">
+           <span class="span_sira" id="s7">07</span>
+           <span class="span_ph"><img src="voice\ire.png" id="p7"></span>
+           <span class="span_olke" id="o7">Norway</span>
+           <span class="span_ball" id="t7">0</span>
+           <span class="span_bal" id="b7">0</span>
+        </div>
+
      </div>
 
 	</div>
@@ -152,12 +160,13 @@
 
 <div style="display: none; position: absolute; z-index: -5;">
 
-    <span id="swe">1</span>
-    <span id="fin">1</span>
-    <span id="nor">1</span>
-    <span id="uk">1</span>
-    <span id="aus">1</span>
+    <span id="swe">0</span>
+    <span id="fin">3</span>
+    <span id="nor">4</span>
+    <span id="uk">5</span>
+    <span id="aus">2</span>
     <span id="cro">1</span>
+    <span id="ire">0</span>
 
   </div>
 
@@ -168,9 +177,10 @@
    	var Sweden = Number(swe.textContent);
       var Finland = Number(fin.textContent);
       var Norway = Number(nor.textContent);
-      var United = Number(uk.textContent)
+      var United = Number(uk.textContent);
       var Australia = Number(aus.textContent);
-      var Croatia = Number(cro.textContent)
+      var Croatia = Number(cro.textContent);
+      var Ireland = Number(ire.textContent);
 
 
       var Img1 = document.getElementById('p1');
@@ -179,20 +189,21 @@
       var Img4 = document.getElementById('p4');
       var Img5 = document.getElementById('p5');
       var Img6 = document.getElementById('p6');
+      var Img7 = document.getElementById('p7');
 
-      var list1 = [Sweden, Finland, Norway, United, Australia, Croatia];
+      var list1 = [Sweden, Finland, Norway, United, Australia, Croatia, Ireland];
 
-      var list2 = ["Sweden - T.I.ViAl", "Finland - Fərail", "Norway - Narmin", "United Kingdom - Ilsvami", "Australia - Husso", "Croatia - Tarlan"];
+      var list2 = ["Sweden - T.I.ViAl", "Finland - Fərail", "Norway - Narmin", "United Kingdom - Ilsvami", "Australia - Husso", "Croatia - Tarlan", "Ireland - Zhala"];
 
-      var listimg = ['voice/swe.png', 'voice/fin.png', 'voice/nor.png', 'voice/uk.png', 'voice/aus.png', 'voice/cro.png'];
+      var listimg = ['voice/swe.png', 'voice/fin.png', 'voice/nor.png', 'voice/uk.png', 'voice/aus.png', 'voice/cro.png', 'voice/ire.png'];
 
 
-      var list3 = [6];
-      var list4 = [6];
-      var list5 = [6];
-      var list6 = [6];
-      var boyuk = 0, indexx = 0, n = 6, c = 0, evez1, evez2, evez3;
-      for (var i = 0; i < 6; i++) {
+      var list3 = [7];
+      var list4 = [7];
+      var list5 = [7];
+      var list6 = [7];
+      var boyuk = 0, indexx = 0, n = 7, c = 0, evez1, evez2, evez3;
+      for (var i = 0; i < 7; i++) {
         for (var j = 0; j < n; j++) {
           if (list1[j] >= boyuk) {
             boyuk = list1[j];
@@ -229,6 +240,7 @@
       t4.textContent = list5[3] + " %";
       t5.textContent = list5[4] + " %";
       t6.textContent = list5[5] + " %";
+      t7.textContent = list5[6] + " %";
 
 
       b1.textContent = 120 - list4[0];
@@ -237,6 +249,7 @@
       b4.textContent = 120 - list4[3];
       b5.textContent = 120 - list4[4];
       b6.textContent = 120 - list4[5];
+      b7.textContent = 120 - list4[6];
 
 
       o1.textContent = list3[0];
@@ -245,6 +258,7 @@
       o4.textContent = list3[3];
       o5.textContent = list3[4];
       o6.textContent = list3[5];
+      o7.textContent = list3[6];
 
       Img1.src = list6[0];
       Img2.src = list6[1];
@@ -252,6 +266,7 @@
       Img4.src = list6[3];
       Img5.src = list6[4];
       Img6.src = list6[5];
+      Img7.src = list6[6];
      
      spn.textContent = list3[0];
      
