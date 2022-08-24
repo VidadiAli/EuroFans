@@ -224,6 +224,22 @@
            <span class="span_bal" id="b17">0</span>
         </div>
 
+        <div id="div18">
+           <span class="span_sira" id="s18">18</span>
+           <span class="span_ph"><img src="voice\itl.png" id="p18"></span>
+           <span class="span_olke" id="o18">Italy</span>
+           <span class="span_ball" id="t18">0</span>
+           <span class="span_bal" id="b18">0</span>
+        </div>
+
+        <div id="div19">
+           <span class="span_sira" id="s19">19</span>
+           <span class="span_ph"><img src="voice\kor.png" id="p19"></span>
+           <span class="span_olke" id="o19">South Korea</span>
+           <span class="span_ball" id="t19">0</span>
+           <span class="span_bal" id="b19">0</span>
+        </div>
+
      </div>
 
 	</div>
@@ -243,22 +259,24 @@
 <div style="display: none; position: absolute; z-index: -5;">
 
     <span id="swe">1</span>
-    <span id="fin">5</span>
-    <span id="nor">3</span>
+    <span id="fin">7</span>
+    <span id="nor">7</span>
     <span id="uk">4</span>
-    <span id="aus">9</span>
+    <span id="aus">6</span>
     <span id="cro">3</span>
     <span id="ire">0</span>
-    <span id="isr">9</span>
-    <span id="kos">7</span>
+    <span id="isr">10</span>
+    <span id="kos">6</span>
     <span id="cub">0</span>
-    <span id="cal">4</span>
+    <span id="cal">9</span>
     <span id="usa">0</span>
     <span id="net">0</span>
     <span id="swi">0</span>
     <span id="mau">0</span>
-    <span id="can">0</span>
+    <span id="can">7</span>
     <span id="cze">0</span>
+    <span id="itl">0</span>
+    <span id="kor">0</span>
 
 
   </div>
@@ -267,7 +285,7 @@
 <script type="text/javascript">
 	
  
-      var Sweden = Number(swe.textContent);
+   	var Sweden = Number(swe.textContent);
       var Finland = Number(fin.textContent);
       var Norway = Number(nor.textContent);
       var United = Number(uk.textContent);
@@ -284,6 +302,8 @@
       var Maur = Number(mau.textContent);
       var Canada = Number(can.textContent);
       var Czech = Number(cze.textContent);
+      var Italy = Number(itl.textContent);
+      var Korea = Number(kor.textContent);
 
 
       var Img1 = document.getElementById('p1');
@@ -303,20 +323,22 @@
       var Img15 = document.getElementById('p15');
       var Img16 = document.getElementById('p16');
       var Img17 = document.getElementById('p17');
+      var Img18 = document.getElementById('p18');
+      var Img19 = document.getElementById('p19');
 
-      var list1 = [Sweden, Finland, Norway, United, Australia, Croatia, Ireland, Israel, Kosova, Cuba, Caledonia, Usa, Netherlands, Switzerland, Maur, Canada, Czech];
+      var list1 = [Sweden, Finland, Norway, United, Australia, Croatia, Ireland, Israel, Kosova, Cuba, Caledonia, Usa, Netherlands, Switzerland, Maur, Canada, Czech, Italy, Korea];
 
-      var list2 = ["Sweden - T.I.ViAl", "Finland - Fərail", "Norway - Narmin", "United Kingdom - Ilsvami", "Australia - Husso", "Croatia - Tarlan", "Ireland - Zhala", "Israel - Sefashka", "Kosova - Ömerica", "Cuba - Orxan", "New Caledonia - Khan Terrero", "United States - Behruz", "The Netherlands - Ahshan", "Switzerland - NÄHID", "Mauritius - Nzzzl", "Canada - Memo", "Czech Republic - VKS"];
+      var list2 = ["Sweden - T.I.ViAl", "Finland - Fərail", "Norway - Narmin", "United Kingdom - Ilsvami", "Australia - Husso", "Croatia - Tarlan", "Ireland - Zhala", "Israel - Sefashka", "Kosova - Ömerica", "Cuba - Orxan", "New Caledonia - Khan Terrero", "United States - Behruz", "The Netherlands - Ahshan", "Switzerland - NÄHID", "Mauritius - Nzzzl", "Canada - Memo", "Czech Republic - VKS", "Italy - Surprise XX", "South Korea - Fortem Singer"];
 
-      var listimg = ['voice/swe.png', 'voice/fin.png', 'voice/nor.png', 'voice/uk.png', 'voice/aus.png', 'voice/cro.png', 'voice/ire.png', 'voice/isr.png', 'voice/kos.png', 'voice/cub.png', 'voice/cal.png', 'voice/usa.png', 'voice/net.png', 'voice/swi.png', 'voice/mau.png', 'voice/can.png', 'voice/cze.png'];
+      var listimg = ['voice/swe.png', 'voice/fin.png', 'voice/nor.png', 'voice/uk.png', 'voice/aus.png', 'voice/cro.png', 'voice/ire.png', 'voice/isr.png', 'voice/kos.png', 'voice/cub.png', 'voice/cal.png', 'voice/usa.png', 'voice/net.png', 'voice/swi.png', 'voice/mau.png', 'voice/can.png', 'voice/cze.png', 'voice/itl.png', 'voice/kor.png'];
 
 
-      var list3 = [17];
-      var list4 = [17];
-      var list5 = [17];
-      var list6 = [17];
-      var boyuk = 0, indexx = 0, n = 17, c = 0, evez1, evez2, evez3;
-      for (var i = 0; i < 17; i++) {
+      var list3 = [19];
+      var list4 = [19];
+      var list5 = [19];
+      var list6 = [19];
+      var boyuk = 0, indexx = 0, n = 19, c = 0, evez1, evez2, evez3;
+      for (var i = 0; i < 19; i++) {
         for (var j = 0; j < n; j++) {
           if (list1[j] >= boyuk) {
             boyuk = list1[j];
@@ -326,7 +348,7 @@
 
         list3[c] = list2[indexx];
         list4[c] = boyuk;
-        list5[c] = Math.floor((boyuk / (Sweden + Finland + Norway + Australia + Croatia + United + Israel + Kosova + Cuba + Caledonia + Usa + Netherlands + Switzerland + Maur + Canada + Czech)) * 100);
+        list5[c] = Math.floor((boyuk / (Sweden + Finland + Norway + Australia + Croatia + United + Israel + Kosova + Cuba + Caledonia + Usa + Netherlands + Switzerland + Maur + Canada + Czech + Italy + Korea)) * 100);
 
         list6[c] = listimg[indexx];
 
@@ -364,6 +386,8 @@
       t15.textContent = list5[14] + " %";
       t16.textContent = list5[15] + " %";
       t17.textContent = list5[16] + " %";
+      t18.textContent = list5[17] + " %";
+      t19.textContent = list5[18] + " %";
 
 
       b1.textContent = 120 - list4[0];
@@ -383,6 +407,8 @@
       b15.textContent = 120 - list4[14];
       b16.textContent = 120 - list4[15];
       b17.textContent = 120 - list4[16];
+      b18.textContent = 120 - list4[17];
+      b19.textContent = 120 - list4[18];
 
 
       o1.textContent = list3[0];
@@ -402,6 +428,8 @@
       o15.textContent = list3[14];
       o16.textContent = list3[15];
       o17.textContent = list3[16];
+      o18.textContent = list3[17];
+      o19.textContent = list3[18];
 
       Img1.src = list6[0];
       Img2.src = list6[1];
@@ -420,6 +448,8 @@
       Img15.src = list6[14];
       Img16.src = list6[15];
       Img17.src = list6[16];
+      Img18.src = list6[17];
+      Img19.src = list6[18];
      
      spn.textContent = list3[0];
      
