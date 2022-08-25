@@ -75,7 +75,7 @@
 
 <section class="odds">
 
-	<h2 class="h2">Who will be winner of the voice of eurofas 5th edition?</h2>
+	<h2 class="h2">Who Will be Winner of the Voice of Eurofans 5th Edition?</h2>
 
 	<div class="bookmakers">
 		<span class="span1">Bookmakers have predicted:</span><span id="spn" class="span2">COUNTRY</span>
@@ -240,6 +240,14 @@
            <span class="span_bal" id="b19">0</span>
         </div>
 
+        <div id="div20">
+           <span class="span_sira" id="s20">20</span>
+           <span class="span_ph"><img src="voice\bul.png" id="p20"></span>
+           <span class="span_olke" id="o20">Bulgaria</span>
+           <span class="span_ball" id="t20">0</span>
+           <span class="span_bal" id="b20">0</span>
+        </div>
+
      </div>
 
 	</div>
@@ -277,6 +285,7 @@
     <span id="cze">0</span>
     <span id="itl">0</span>
     <span id="kor">0</span>
+    <span id="bul">0</span>
 
 
   </div>
@@ -304,6 +313,7 @@
       var Czech = Number(cze.textContent);
       var Italy = Number(itl.textContent);
       var Korea = Number(kor.textContent);
+      var Bulgaria = Number(bul.textContent);
 
 
       var Img1 = document.getElementById('p1');
@@ -325,20 +335,21 @@
       var Img17 = document.getElementById('p17');
       var Img18 = document.getElementById('p18');
       var Img19 = document.getElementById('p19');
+      var Img20 = document.getElementById('p20');
 
-      var list1 = [Sweden, Finland, Norway, United, Australia, Croatia, Ireland, Israel, Kosova, Cuba, Caledonia, Usa, Netherlands, Switzerland, Maur, Canada, Czech, Italy, Korea];
+      var list1 = [Sweden, Finland, Norway, United, Australia, Croatia, Ireland, Israel, Kosova, Cuba, Caledonia, Usa, Netherlands, Switzerland, Maur, Canada, Czech, Italy, Korea, Bulgaria];
 
-      var list2 = ["Sweden - T.I.ViAl", "Finland - Fərail", "Norway - Narmin", "United Kingdom - Ilsvami", "Australia - Husso", "Croatia - Tarlan", "Ireland - Zhala", "Israel - Sefashka", "Kosova - Ömerica", "Cuba - Orxan", "New Caledonia - Khan Terrero", "United States - Behruz", "The Netherlands - Afshan", "Switzerland - NÄHID", "Mauritius - Nzzzl", "Canada - Memo", "Czech Republic - VKS", "Italy - Surprise XX", "South Korea - Fortem Singer"];
+      var list2 = ["Sweden - T.I.ViAl", "Finland - Fərail", "Norway - Narmin", "United Kingdom - Ilsvami", "Australia - Husso", "Croatia - Tarlan", "Ireland - Zhala", "Israel - Sefashka", "Kosova - Ömerica", "Cuba - Orxan", "New Caledonia - Khan Terrero", "United States - Behruz", "The Netherlands - Afshan", "Switzerland - NÄHID", "Mauritius - Nzzzl", "Canada - Memo", "Czech Republic - VKS", "Italy - Surprise XX", "South Korea - Fortem Singer", "Bulgaria - Möhsüm"];
 
-      var listimg = ['voice/swe.png', 'voice/fin.png', 'voice/nor.png', 'voice/uk.png', 'voice/aus.png', 'voice/cro.png', 'voice/ire.png', 'voice/isr.png', 'voice/kos.png', 'voice/cub.png', 'voice/cal.png', 'voice/usa.png', 'voice/net.png', 'voice/swi.png', 'voice/mau.png', 'voice/can.png', 'voice/cze.png', 'voice/itl.png', 'voice/kor.png'];
+      var listimg = ['voice/swe.png', 'voice/fin.png', 'voice/nor.png', 'voice/uk.png', 'voice/aus.png', 'voice/cro.png', 'voice/ire.png', 'voice/isr.png', 'voice/kos.png', 'voice/cub.png', 'voice/cal.png', 'voice/usa.png', 'voice/net.png', 'voice/swi.png', 'voice/mau.png', 'voice/can.png', 'voice/cze.png', 'voice/itl.png', 'voice/kor.png', 'voice/bul.png'];
 
 
-      var list3 = [19];
-      var list4 = [19];
-      var list5 = [19];
-      var list6 = [19];
-      var boyuk = 0, indexx = 0, n = 19, c = 0, evez1, evez2, evez3;
-      for (var i = 0; i < 19; i++) {
+      var list3 = [20];
+      var list4 = [20];
+      var list5 = [20];
+      var list6 = [20];
+      var boyuk = 0, indexx = 0, n = 20, c = 0, evez1, evez2, evez3;
+      for (var i = 0; i < 20; i++) {
         for (var j = 0; j < n; j++) {
           if (list1[j] >= boyuk) {
             boyuk = list1[j];
@@ -349,7 +360,7 @@
         list3[c] = list2[indexx];
         list4[c] = boyuk;
         list5[c] = 0;
-        /*Math.floor((boyuk / (Sweden + Finland + Norway + Australia + Croatia + United + Israel + Kosova + Cuba + Caledonia + Usa + Netherlands + Switzerland + Maur + Canada + Czech + Italy + Korea)) * 100);*/
+        /*Math.floor((boyuk / (Sweden + Finland + Norway + Australia + Croatia + United + Israel + Kosova + Cuba + Caledonia + Usa + Netherlands + Switzerland + Maur + Canada + Czech + Italy + Korea, Bulgaria)) * 100);*/
 
         list6[c] = listimg[indexx];
 
@@ -389,6 +400,7 @@
       t17.textContent = list5[16] + " %";
       t18.textContent = list5[17] + " %";
       t19.textContent = list5[18] + " %";
+      t20.textContent = list5[19] + " %";
 
 
       b1.textContent = 120 - list4[0];
@@ -410,6 +422,7 @@
       b17.textContent = 120 - list4[16];
       b18.textContent = 120 - list4[17];
       b19.textContent = 120 - list4[18];
+      b20.textContent = 120 - list4[19];
 
 
       o1.textContent = list3[0];
@@ -431,6 +444,7 @@
       o17.textContent = list3[16];
       o18.textContent = list3[17];
       o19.textContent = list3[18];
+      o20.textContent = list3[19];
 
       Img1.src = list6[0];
       Img2.src = list6[1];
@@ -451,6 +465,7 @@
       Img17.src = list6[16];
       Img18.src = list6[17];
       Img19.src = list6[18];
+      Img20.src = list6[19];
      
      spn.textContent = list3[0];
      
