@@ -4,28 +4,6 @@
 }
 
 
-.close{
-	width: 40%;
-	padding: .5rem;
-    background: yellow;
-    margin: 0 30%;
-    margin-top: 1rem;
-}
-.close h1{
-	width: 100%;
-	font-weight: 900;
-    font-family: 'Crimson Text', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    text-align: center;
-    font-size: 120%;
-}
-.close span{
-	display: inline-block;
-	font-family: serif;
-	text-align: center;
-	width: 100%;  
-	font-size: 100%;
-}
-
 
 .sosial{
 	width: 10rem;
@@ -341,12 +319,6 @@
 		margin: .5rem .5%;
 		padding: .5rem 0;
 	}
-	.close h1{
-		font-size: 90%;
-	}
-	.close span{
-		font-size: 70%;
-	}
 }
 
 @media (max-width: 555px){
@@ -402,12 +374,6 @@
     .odds .ooddss .ooddss_box div .span_ball{
 	    width: 2rem;
     }
-	.close h1{
-		font-size: 70%;
-	}
-	.close span{
-		font-size: 50%;
-	}
 }
 
 @media(max-width: 380px){
@@ -416,10 +382,6 @@
     }
     .odds .bookmakers span{
     	font-size: 75%;
-    }
-    .close{
-    	width: 50%;
-    	margin: 0 25%;
     }
 }
 
