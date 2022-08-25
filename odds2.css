@@ -324,7 +324,10 @@
 @media (max-width: 555px){
 	.profile .img_out{
 	    margin-left: calc(52%);
+		width: 11rem;
+		height: 11rem;
     }
+	
 	.last_winner{
 		top: 2.5rem;
     	left: 2rem;	
