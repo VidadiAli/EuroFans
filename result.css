@@ -4,70 +4,86 @@
 	font-family: serif;
 	font-size: 1rem;
 }
-#sosial{
-	display: flex;
+.sosial{
+	width: 10rem;
 	position: absolute;
-	left: 60%;
-	top: 5rem;
+	left: calc(100% - 12rem);
+	top: 2rem;
 }
-#sosial ul{
-	display: flex;
+.sosial ul{
+	width: 100%;
 }
-#sosial ul li{
-	display: flex;
+.sosial ul li{
+	float: left;
 	list-style: none;
-	margin: 0 .5rem;
+	width: calc(100% / 3);
 }
-#sosial ul li a{
+.sosial ul li a{
 	color: black;
 	text-decoration: none;
-	padding: 5px;
+	font-size: 1.6rem;
+	transition: .3s;
 }
-#sosial ul li a i{
-	font-size: 1.5rem;
-}
-#sosial ul li a i:hover{
-	color: red;
-}
-#div1 img{
-	position: relative;
-	left: 45%;
-}
-#div2{
-	display: flex;
-	margin: 1rem 10rem;
-	padding: 2rem 0;
-	border: 1px solid gray;
-	z-index: 10;
-	box-shadow: 5px 5px 5px 5px gray;
-}
-#div2 ul{
-	display: flex;
-	position: relative;
-	left: 13%;
-}
-#div2 ul li{
-	display: flex;
-	list-style: none;
-}
-#div2 ul li a{
-	font-size: 1.2rem;
-	padding: .8rem 3rem;
-	color: black;
-	text-decoration: none;
-    font-weight: bold;
-}
-#div2 ul li a:hover{
-    background: red;
-    border-radius: 1rem;
-    color: white;
-}
-#h1{
-	position: relative;
-	bottom: 1.5rem;
-	font-size: 1.5rem;
+.sosial ul li a:hover{
+	color: gray;
 }
 
+.profile{
+	width: 100%;
+}
+.profile .img_out{
+	width: 12rem;
+	height: 12rem;
+	margin: 1rem calc(50% - 5rem);
+}
+.profile img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+
+.h1{
+    font-family: 'Crimson Text', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-align: center;
+    font-weight: 900;
+}
+
+.navbar1{
+	display: flex;
+	width: 90%;
+	margin: 1rem auto;
+	margin-top: 3rem;
+	border-bottom: 3px solid skyblue;
+}
+.navbar1 ul{
+	display: flex;
+	padding: 0;
+    width: 100%;
+}
+.navbar1 ul li{
+	display: flex;
+	list-style: none;
+	width: calc(100% / 3);
+}
+.navbar1 ul li a{
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+	font-size: 170%;
+	color: black;
+	width: 90%;
+	margin: 0 auto;
+	padding: .5rem 0;
+	font-family: serif;
+	text-align: center;
+	border-top: 1px solid red;
+	transition: .3s;
+}
+.navbar1 ul li a:hover{
+	background: red;
+	color: white;
+}
 
 
 
@@ -241,9 +257,70 @@
 	}
 
 
+	.countries_ana{
+		width: 96%;
+		background: gray;
+		margin: 2rem 2%;
+		padding: 2%;
+	}
+	.countries_ana .countries{
+		display: inline-block;
+		width: 3rem;
+		height: 2rem;
+		margin: .3rem;
+	}
+	.countries_ana .countries img{
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+	
+	.puanlar{
+		margin: .2rem;
+		padding: 1.5rem 0;
+		background: gray;
+	}
+	.puanlar img{
+		width: calc(100% / 10 - 0.7rem);
+       height: 85px;
+       margin: .2%;
+	}
+	.puanlar span{
+		color: white;
+		margin: .3rem;
+	}
 
 
 
+@media(max-width: 1400px){
+	.puanlar img{
+		height: 65px;
+	}
+}
+
+
+
+@media(max-width: 1000px){
+	.puanlar img{
+		height: 47px;
+		width: calc(100% / 10 - 0.5rem);
+	}
+}
+
+
+
+@media(max-width: 650px){
+	.sosial{
+		top: 12rem;
+		left: calc(50% - 4.5rem);
+	}
+	.h1{
+		margin-top: 3rem;
+	}
+	.puanlar img{
+		height: 35px;
+	}
+}
 
 
 
@@ -254,35 +331,7 @@
 	body{
 		border: none;
 	}
-	#sosial{
-		top: 2rem;
-		left: 50%;
-	}
-	#div1 img{
-		left: 8%;
-	}
-	#div2{
-		width: 94%;
-		margin: 3%;
-		padding: 1%;
-		position: relative;
-		bottom: 1.5rem;
-	}
-	#div2 ul{
-		padding: 0;
-		margin: 0;
-		left: 5%;
-	}
-    #div2 ul li a{
-    	font-size: .7rem;
-	    padding: .5rem 1.2rem;
-	    margin: .5rem .8rem;
-    }
-	#h1{
-		position: relative;
-		bottom: 2rem;
-		font-size: 1.5rem;
-	}
+	
 	.countries_ana{
 		width: 96%;
 		background: gray;
@@ -575,4 +624,11 @@
 	    padding: .2rem .3rem;
 	    margin: .2rem .3rem;
     }
+}
+
+
+@media (max-width: 330px){
+	.puanlar img{
+		width: calc(100% / 10 - 0.3rem);
+	}
 }
