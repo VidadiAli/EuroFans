@@ -383,6 +383,10 @@
     .odds .ooddss .ooddss_box div .span_ball{
 	    width: 2rem;
     }
+	.editions a{
+        width: calc(96% / 3);
+		padding: .2rem 0;
+    }
 }
 
 @media(max-width: 380px){
