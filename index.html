@@ -341,6 +341,38 @@
             <span class="span_ball" id="t31">0</span>
             <span class="span_bal" id="b31">0</span>
          </div>
+ 
+         <div id="div32">
+            <span class="span_sira" id="s32">32</span>
+            <span class="span_ph"><img src="voice\afg.png" id="p32"></span>
+            <span class="span_olke" id="o32">Czech Republic</span>
+            <span class="span_ball" id="t32">0</span>
+            <span class="span_bal" id="b32">0</span>
+         </div>
+ 
+         <div id="div33">
+            <span class="span_sira" id="s33">33</span>
+            <span class="span_ph"><img src="voice\mol.png" id="p33"></span>
+            <span class="span_olke" id="o33">Moldova</span>
+            <span class="span_ball" id="t33">0</span>
+            <span class="span_bal" id="b33">0</span>
+         </div>
+ 
+         <div id="div34">
+            <span class="span_sira" id="s34">34</span>
+            <span class="span_ph"><img src="voice\kor.png" id="p34"></span>
+            <span class="span_olke" id="o34">South Korea</span>
+            <span class="span_ball" id="t34">0</span>
+            <span class="span_bal" id="b34">0</span>
+         </div>
+ 
+         <div id="div35">
+            <span class="span_sira" id="s35">35</span>
+            <span class="span_ph"><img src="voice\bos.png" id="p35"></span>
+            <span class="span_olke" id="o35">Bosnia & Her ...</span>
+            <span class="span_ball" id="t35">0</span>
+            <span class="span_bal" id="b35">0</span>
+         </div>
 
 
      </div>
@@ -361,37 +393,41 @@
 
 <div style="display: none; position: absolute; z-index: -5;">
 
-    <span id="isr">0</span>
-    <span id="gre">0</span>
-    <span id="uk">30</span>
-    <span id="uga">0</span>
-    <span id="ant">10</span>
+    <span id="isr">7</span>
+    <span id="gre">19</span>
+    <span id="uk">33</span>
+    <span id="uga">20</span>
+    <span id="ant">25</span>
     <span id="ger">0</span>
-    <span id="sco">0</span>
+    <span id="sco">3</span>
     <span id="aze">2</span>
-    <span id="swi">11</span>
+    <span id="swi">17</span>
     <span id="sau">0</span>
-    <span id="sai">7</span>
-    <span id="nor">11</span>
-    <span id="ala">4</span>
+    <span id="sai">1</span>
+    <span id="nor">26</span>
+    <span id="ala">18</span>
     <span id="spa">15</span>
-    <span id="aus">22</span>
-    <span id="wor">8</span>
-    <span id="fra">4</span>
+    <span id="aus">0</span>
+    <span id="wor">0</span>
+    <span id="fra">2</span>
     <span id="ita">0</span>
-    <span id="vir">4</span>
-    <span id="uel">2</span>
-    <span id="sey">2</span>
-    <span id="mac">0</span>
+    <span id="vir">5</span>
+    <span id="uel">17</span>
+    <span id="sey">0</span>
+    <span id="mac">1</span>
     <span id="bur">0</span>
     <span id="nep">0</span>
-    <span id="cal">5</span>
-    <span id="fin">61</span>
-    <span id="cze">31</span>
+    <span id="cal">8</span>
+    <span id="fin">25</span>
+    <span id="cze">23</span>
     <span id="tur">0</span>
-    <span id="mex">0</span>
-    <span id="kos">25</span>
-    <span id="swe">8</span>
+    <span id="mex">2</span>
+    <span id="kos">18</span>
+    <span id="swe">10</span>
+    <span id="afg">0</span>
+    <span id="ser">2</span>
+    <span id="sou">2</span>
+    <span id="net">0</span>
 
 
   </div>
@@ -431,6 +467,10 @@
       var Macedonia = Number(mac.textContent);
       var Burkina = Number(bur.textContent);
       var Nepal = Number(nep.textContent);
+      var Afghanistan = Number(afg.textContent);
+      var Serbia = Number(ser.textContent);
+      var Netherlands = Number(net.textContent);
+      var South = Number(sou.textContent);
 
 
       var Img1 = document.getElementById('p1');
@@ -465,21 +505,25 @@
       var Img29 = document.getElementById('p29');
       var Img30 = document.getElementById('p30');
       var Img31 = document.getElementById('p31');
+      var Img32 = document.getElementById('p32');
+      var Img33 = document.getElementById('p33');
+      var Img34 = document.getElementById('p34');
+      var Img35 = document.getElementById('p35');
       
 
-      var list1 = [Sweden, Finland, Norway, United, Australia, Greece, Uganda, Israel, Kosova, Antractica, Caledonia, Germany, Scotland, Azerbaijan, Switzerland, Saudi, Saint, Aland, Spain, World, France, Italy, Virginia, Uels, Seychelles, Macedonia, Burkina, Nepal, Turkey, Mexico, Czech];
+      var list1 = [Sweden, Finland, Norway, United, Australia, Greece, Uganda, Israel, Kosova, Antractica, Caledonia, Germany, Scotland, Azerbaijan, Switzerland, Saudi, Saint, Aland, Spain, World, France, Italy, Virginia, Uels, Seychelles, Macedonia, Burkina, Nepal, Turkey, Mexico, Czech, Afghanistan, Serbia, Netherlands, South];
 
-      var list2 = ["Sweden - Member","Finland - Member","Norway - Member","United Kingdom - Member","Australia - Member","Greece - Member","Uganda - Member","Israel - Member","Kosova - Member","Antractica - Member","New Caledonia - Member","Germany - Member","Scotland - Member","Azerbaijan - Member","Switzerland - Member","Saudi Arabia - Member","Saint Vin... - Member","Aland - Member","Spain - Member","World - Member","France - Member","Italy - Member","Virginia - Member","Uels - Member","Seychelles - Member","North Mac... - Member","Burkina Faso - Member","Nepal - Member","Turkey - Member","Mexico - Member","Czech Rep... - Member"];
+      var list2 = ["Sweden - Member","Finland - Member","Norway - Member","United Kingdom - Member", "Australia - Member","Greece - Member","Uganda - Member","Israel - Member","Kosova - Member", "Antractica - Member","New Caledonia - Member","Germany - Member","Scotland - Member","Azerbaijan - Member","Switzerland - Member","Saudi Arabia - Member","Saint Vin... - Member","Aland - Member","Spain - Member","World - Member","France - Member","Italy - Member","Virginia - Member","Uels - Member","Seychelles - Member","North Mac... - Member","Burkina Faso - Member","Nepal - Member","Turkey - Member","Mexico - Member","Czech Rep... - Member", "Afghanistan - Member", "Serbia - Member", "The Netherlands - Member", "South Korea - Member"];
 
-      var listimg = ['voice/swe.png', 'voice/fin.png', 'voice/nor.png', 'voice/uk.png', 'voice/aus.png', 'voice/gre.png', 'voice/uga.png', 'voice/isr.png', 'voice/kos.png', 'voice/ant.png', 'voice/cal.png', 'voice/ger.png', 'voice/sco.png', 'voice/aze.png', 'voice/swi.png', 'voice/sau.png', 'voice/sai.png', 'voice/ala.png', 'voice/spa.png', 'voice/wor.png', 'voice/fra.png', 'voice/ita.png', 'voice/vir.png', 'voice/uel.png', 'voice/sey.png', 'voice/mac.png', 'voice/bur.png', 'voice/nep.png', 'voice/tur.png', 'voice/mex.png', 'voice/cze.png'];
+      var listimg = ['voice/swe.png', 'voice/fin.png', 'voice/nor.png', 'voice/uk.png', 'voice/aus.png', 'voice/gre.png', 'voice/uga.png', 'voice/isr.png', 'voice/kos.png', 'voice/ant.png', 'voice/cal.png', 'voice/ger.png', 'voice/sco.png', 'voice/aze.png', 'voice/swi.png', 'voice/sau.png', 'voice/sai.png', 'voice/ala.png', 'voice/spa.png', 'voice/wor.png', 'voice/fra.png', 'voice/ita.png', 'voice/vir.png', 'voice/uel.png', 'voice/sey.png', 'voice/mac.png', 'voice/bur.png', 'voice/nep.png', 'voice/tur.png', 'voice/mex.png', 'voice/cze.png', 'voice/afg.png', 'voice/ser.png', 'voice/net.png', 'voice/sou.png'];
 
 
-      var list3 = [31];
-      var list4 = [31];
-      var list5 = [31];
-      var list6 = [31];
-      var boyuk = 0, indexx = 0, n = 31, c = 0, evez1, evez2, evez3;
-      for (var i = 0; i < 31; i++) {
+      var list3 = [35];
+      var list4 = [35];
+      var list5 = [35];
+      var list6 = [35];
+      var boyuk = 0, indexx = 0, n = 35, c = 0, evez1, evez2, evez3;
+      for (var i = 0; i < 35; i++) {
         for (var j = 0; j < n; j++) {
           if (list1[j] >= boyuk) {
             boyuk = list1[j];
@@ -489,7 +533,7 @@
 
         list3[c] = list2[indexx];
         list4[c] = boyuk;
-        list5[c] = Math.floor((boyuk / (Sweden + Finland + Norway + United + Australia + Greece + Uganda + Israel + Kosova + Antractica + Caledonia + Germany + Scotland + Azerbaijan + Switzerland + Saudi + Saint + Aland + Spain + World + France + Italy + Virginia + Uels + Seychelles + Macedonia + Burkina + Nepal + Turkey + Mexico + Czech)) * 100);
+        list5[c] = Math.floor((boyuk / (Sweden + Finland + Norway + United + Australia + Greece + Uganda + Israel + Kosova + Antractica + Caledonia + Germany + Scotland + Azerbaijan + Switzerland + Saudi + Saint + Aland + Spain + World + France + Italy + Virginia + Uels + Seychelles + Macedonia + Burkina + Nepal + Turkey + Mexico + Czech + Afghanistan + Serbia + Netherlands + South)) * 100);
 
         list6[c] = listimg[indexx];
 
@@ -541,6 +585,10 @@
       t29.textContent = list5[28] + " %";
       t30.textContent = list5[29] + " %";
       t31.textContent = list5[30] + " %";
+      t32.textContent = list5[31] + " %";
+      t33.textContent = list5[32] + " %";
+      t34.textContent = list5[33] + " %";
+      t35.textContent = list5[34] + " %";
 
 
       b1.textContent = 120 - list4[0];
@@ -574,6 +622,10 @@
       b29.textContent = 120 - list4[28];
       b30.textContent = 120 - list4[29];
       b31.textContent = 120 - list4[30];
+      b32.textContent = 120 - list4[31];
+      b33.textContent = 120 - list4[32];
+      b34.textContent = 120 - list4[33];
+      b35.textContent = 120 - list4[34];
 
 
       o1.textContent = list3[0];
@@ -607,6 +659,10 @@
       o29.textContent = list3[28];
       o30.textContent = list3[29];
       o31.textContent = list3[30];
+      o32.textContent = list3[31];
+      o33.textContent = list3[32];
+      o34.textContent = list3[33];
+      o35.textContent = list3[34];
       
 
       Img1.src = list6[0];
@@ -640,6 +696,10 @@
       Img29.src = list6[28];
       Img30.src = list6[29];
       Img31.src = list6[30];
+      Img32.src = list6[31];
+      Img33.src = list6[32];
+      Img34.src = list6[33];
+      Img35.src = list6[34];
       
      
      spn.textContent = list3[0];
