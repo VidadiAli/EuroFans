@@ -156,7 +156,7 @@
          </div>
 
 
-        <div id="div9">
+        <div id="div9" style="background-color: lightskyblue;">
            <span class="span_sira" id="s9">09</span>
            <span class="span_ph"><img src="voice\kos.png" id="p9"></span>
            <span class="span_olke" id="o9">Kosova</span>
@@ -164,7 +164,7 @@
            <span class="span_bal" id="b9">0</span>
         </div>
 
-        <div id="div10">
+        <div id="div10" style="background-color: lightskyblue;">
            <span class="span_sira" id="s10">10</span>
            <span class="span_ph"><img src="voice\cub.png" id="p10"></span>
            <span class="span_olke" id="o10">Cuba</span>
@@ -196,6 +196,23 @@
            <span class="span_bal" id="b13">0</span>
         </div>
 
+        
+        <div id="div14">
+         <span class="span_sira" id="s14">14</span>
+         <span class="span_ph"><img src="voice\usa.png" id="p14"></span>
+         <span class="span_olke" id="o14">United States</span>
+         <span class="span_ball" id="t14">0</span>
+         <span class="span_bal" id="b14">0</span>
+      </div>
+
+      <div id="div15">
+         <span class="span_sira" id="s15">15</span>
+         <span class="span_ph"><img src="voice\net.png" id="p15"></span>
+         <span class="span_olke" id="o15">The Netherlands</span>
+         <span class="span_ball" id="t15">0</span>
+         <span class="span_bal" id="b15">0</span>
+      </div>
+
 
      </div>
 
@@ -215,19 +232,21 @@
 
 <div style="display: none; position: absolute; z-index: -5;">
 
-    <span id="fra">7</span>
-    <span id="ita">0</span>
-    <span id="vir">5</span>
-    <span id="uel">10</span>
-    <span id="sey">2</span>
+    <span id="sco">2</span>
+    <span id="sai">0</span>
+    <span id="fra">5</span>
+    <span id="ser">17</span>
+    <span id="sey">0</span>
     <span id="mac">1</span>
-    <span id="bur">0</span>
-    <span id="nep">0</span>
-    <span id="cal">3</span>
-    <span id="fin">41</span>
-    <span id="cze">17</span>
-    <span id="tur">5</span>
-    <span id="mex">12</span>
+    <span id="tur">0</span>
+    <span id="cal">0</span>
+    <span id="aze">18</span>
+    <span id="ant">23</span>
+    <span id="mex">0</span>
+    <span id="cze">27</span>
+    <span id="afg">0</span>
+    <span id="uel">0</span>
+    <span id="swi">2</span>
 
 
   </div>
@@ -236,19 +255,21 @@
 <script type="text/javascript">
    
  
-      var Finland = Number(fin.textContent);
-      var Turkey = Number(tur.textContent);
-      var Caledonia = Number(cal.textContent);
-      var Mexico = Number(mex.textContent);
-      var Czech = Number(cze.textContent);
+      var Scotland = Number(sco.textContent);
+      var Saint = Number(sai.textContent);
       var France = Number(fra.textContent);
-      var Italy = Number(ita.textContent);
-      var Virginia = Number(vir.textContent);
-      var Uels = Number(uel.textContent);
+      var Serbia = Number(ser.textContent);
       var Seychelles = Number(sey.textContent);
       var Macedonia = Number(mac.textContent);
-      var Burkina = Number(bur.textContent);
-      var Nepal = Number(nep.textContent);
+      var Turkey = Number(tur.textContent);
+      var Caledonia = Number(cal.textContent);
+      var Azerbaijan = Number(aze.textContent);
+      var Antractica = Number(ant.textContent);
+      var Mexico = Number(mex.textContent);
+      var Czech = Number(cze.textContent);
+      var Afghanistan = Number(afg.textContent);
+      var Uels = Number(uel.textContent);
+      var Switzerland = Number(swi.textContent);
 
 
       var Img1 = document.getElementById('p1');
@@ -264,21 +285,23 @@
       var Img11 = document.getElementById('p11');
       var Img12 = document.getElementById('p12');
       var Img13 = document.getElementById('p13');
+      var Img14 = document.getElementById('p14');
+      var Img15 = document.getElementById('p15');
       
 
-      var list1 = [Finland, Caledonia, France, Italy, Virginia, Uels, Seychelles, Macedonia, Burkina, Nepal, Turkey, Mexico, Czech];
+      var list1 = [Scotland, Saint, France, Serbia, Seychelles, Macedonia, Turkey , Caledonia, Azerbaijan, Antractica, Mexico, Czech, Afghanistan, Uels, Switzerland];
 
-      var list2 = ["Finland - Member", "New Caledonia - Member", "France - Member","Italy - Member","Virginia - Member","Uels - Member","Seychelles - Member", "North Mac... - Member","Burkina Faso - Member","Nepal - Member","Turkey - Member","Mexico - Member","Czech Rep... - Member"];
+      var list2 = ["Scotland", "Saint", "France", "Serbia", "Seychelles", "North Macedonia", "Turkey" , "New Caledonia", "Azerbaijan", "Antractica", "Mexico", "Czech Republic", "Afghanistan", "Uels", "Switzerland"];
 
-      var listimg = ['voice/fin.png', 'voice/cal.png', 'voice/fra.png', 'voice/ita.png', 'voice/vir.png', 'voice/uel.png', 'voice/sey.png', 'voice/mac.png', 'voice/bur.png', 'voice/nep.png', 'voice/tur.png', 'voice/mex.png', 'voice/cze.png'];
+      var listimg = ['voice/sco.png', 'voice/sai.png', 'voice/fra.png', 'voice/ser.png', 'voice/sey.png', 'voice/mac.png', 'voice/tur.png', 'voice/cal.png', 'voice/aze.png', 'voice/ant.png', 'voice/mex.png', 'voice/cze.png', 'voice/afg.png', 'voice/uel.png', 'voice/swi.png'];
 
 
-      var list3 = [13];
-      var list4 = [13];
-      var list5 = [13];
-      var list6 = [13];
-      var boyuk = 0, indexx = 0, n = 13, c = 0, evez1, evez2, evez3;
-      for (var i = 0; i < 13; i++) {
+      var list3 = [15];
+      var list4 = [15];
+      var list5 = [15];
+      var list6 = [15];
+      var boyuk = 0, indexx = 0, n = 15, c = 0, evez1, evez2, evez3;
+      for (var i = 0; i < 15; i++) {
         for (var j = 0; j < n; j++) {
           if (list1[j] >= boyuk) {
             boyuk = list1[j];
@@ -288,7 +311,7 @@
 
         list3[c] = list2[indexx];
         list4[c] = boyuk;
-        list5[c] = Math.floor((boyuk / (Finland + Caledonia + France + Italy + Virginia + Uels + Seychelles + Macedonia + Burkina + Nepal + Turkey + Mexico + Czech)) * 100);
+        list5[c] = Math.floor((boyuk / (Scotland+ Saint + France + Serbia + Seychelles + Macedonia + Turkey + Caledonia + Azerbaijan + Antractica + Mexico + Czech + Afghanistan + Uels + Switzerland)) * 100);
 
         list6[c] = listimg[indexx];
 
@@ -322,6 +345,8 @@
       t11.textContent = list5[10] + " %";
       t12.textContent = list5[11] + " %";
       t13.textContent = list5[12] + " %";
+      t14.textContent = list5[13] + " %";
+      t15.textContent = list5[14] + " %";
 
 
       b1.textContent = 120 - list4[0];
@@ -337,6 +362,8 @@
       b11.textContent = 120 - list4[10];
       b12.textContent = 120 - list4[11];
       b13.textContent = 120 - list4[12];
+      b14.textContent = 120 - list4[13];
+      b15.textContent = 120 - list4[14];
 
 
       o1.textContent = list3[0];
@@ -352,6 +379,8 @@
       o11.textContent = list3[10];
       o12.textContent = list3[11];
       o13.textContent = list3[12];
+      o14.textContent = list3[13];
+      o15.textContent = list3[14];
       
 
       Img1.src = list6[0];
@@ -367,6 +396,8 @@
       Img11.src = list6[10];
       Img12.src = list6[11];
       Img13.src = list6[12];
+      Img14.src = list6[13];
+      Img15.src = list6[14];
       
      
      spn.textContent = list3[0];
