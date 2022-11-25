@@ -212,16 +212,7 @@
          <span class="span_ball" id="t15">0</span>
          <span class="span_bal" id="b15">0</span>
       </div>
-
-      <div id="div16">
-         <span class="span_sira" id="s16">16</span>
-         <span class="span_ph"><img src="voice\net.png" id="p16"></span>
-         <span class="span_olke" id="o16">The Netherlands</span>
-         <span class="span_ball" id="t16">0</span>
-         <span class="span_bal" id="b16">0</span>
-      </div>
-
-
+         
      </div>
 
    </div>
@@ -240,22 +231,21 @@
 
 <div style="display: none; position: absolute; z-index: -5;">
 
-    <span id="sco">2</span>
+    <span id="sou">2</span>
     <span id="sai">30</span>
     <span id="fra">6</span>
-    <span id="ser">17</span>
-    <span id="sey">0</span>
-    <span id="mac">1</span>
+    <span id="ser">32</span>
+    <span id="aus">78</span>
     <span id="tur">3</span>
     <span id="cal">27</span>
     <span id="aze">8</span>
-    <span id="can">4</span>
+    <span id="usa">4</span>
     <span id="mex">0</span>
-    <span id="cze">35</span>
-    <span id="afg">0</span>
+    <span id="cze">15</span>
+    <span id="afg">26</span>
     <span id="uel">0</span>
-    <span id="swi">29</span>
-    <span id="jap">14</span>
+    <span id="swi">22</span>
+    <span id="jap">20</span>
 
 
   </div>
@@ -264,16 +254,15 @@
 <script type="text/javascript">
    
  
-      var Scotland = Number(sco.textContent);
+      var South = Number(sou.textContent);
       var Saint = Number(sai.textContent);
       var France = Number(fra.textContent);
       var Serbia = Number(ser.textContent);
-      var Seychelles = Number(sey.textContent);
-      var Macedonia = Number(mac.textContent);
+      var Austria = Number(aus.textContent);
       var Turkey = Number(tur.textContent);
       var Caledonia = Number(cal.textContent);
       var Azerbaijan = Number(aze.textContent);
-      var Canada = Number(can.textContent);
+      var America = Number(usa.textContent);
       var Mexico = Number(mex.textContent);
       var Czech = Number(cze.textContent);
       var Afghanistan = Number(afg.textContent);
@@ -297,22 +286,21 @@
       var Img13 = document.getElementById('p13');
       var Img14 = document.getElementById('p14');
       var Img15 = document.getElementById('p15');
-      var Img16 = document.getElementById('p16');
       
 
-      var list1 = [Scotland, Saint, France, Serbia, Seychelles, Macedonia, Turkey , Caledonia, Azerbaijan, Canada, Mexico, Czech, Afghanistan, Uels, Switzerland, Japan];
+      var list1 = [South, Saint, France, Serbia, Austria, Turkey , Caledonia, Azerbaijan, America, Mexico, Czech, Afghanistan, Uels, Switzerland, Japan];
 
-      var list2 = ["Scotland", "Saint", "France", "Serbia", "Seychelles", "North Macedonia", "Turkey" , "New Caledonia", "Azerbaijan", "Canada", "Mexico", "Czech Republic", "Afghanistan", "Wales", "Switzerland", "Japan"];
+      var list2 = ["South Korea", "Saint", "France", "Serbia", "Austria", "Turkey" , "New Caledonia", "Azerbaijan", "United States", "Mexico", "Czech Republic", "Afghanistan", "Wales", "Switzerland", "Japan"];
 
-      var listimg = ['voice/sco.png', 'voice/sai.png', 'voice/fra.png', 'voice/ser.png', 'voice/sey.png', 'voice/mac.png', 'voice/tur.png', 'voice/cal.png', 'voice/aze.png', 'voice/can.png', 'voice/mex.png', 'voice/cze.png', 'voice/afg.png', 'voice/uel.png', 'voice/swi.png', 'voice/jap.png'];
+      var listimg = ['voice/sou.png', 'voice/sai.png', 'voice/fra.png', 'voice/ser.png', 'voice/aus.png', 'voice/tur.png', 'voice/cal.png', 'voice/aze.png', 'voice/usa.png', 'voice/mex.png', 'voice/cze.png', 'voice/afg.png', 'voice/uel.png', 'voice/swi.png', 'voice/jap.png'];
 
 
-      var list3 = [16];
-      var list4 = [16];
+      var list3 = [15];
+      var list4 = [15];
       var list5 = [16];
-      var list6 = [16];
-      var boyuk = 0, indexx = 0, n = 16, c = 0, evez1, evez2, evez3;
-      for (var i = 0; i < 16; i++) {
+      var list6 = [15];
+      var boyuk = 0, indexx = 0, n = 15, c = 0, evez1, evez2, evez3;
+      for (var i = 0; i < 15; i++) {
         for (var j = 0; j < n; j++) {
           if (list1[j] >= boyuk) {
             boyuk = list1[j];
@@ -322,7 +310,7 @@
 
         list3[c] = list2[indexx];
         list4[c] = boyuk;
-        list5[c] = Math.floor((boyuk / (Scotland+ Saint + France + Serbia + Seychelles + Macedonia + Turkey + Caledonia + Azerbaijan + Canada + Mexico + Czech + Afghanistan + Uels + Switzerland + Japan)) * 100);
+        list5[c] = Math.floor((boyuk / (South+ Saint + France + Serbia  + Austria + Turkey + Caledonia + Azerbaijan + America + Mexico + Czech + Afghanistan + Uels + Switzerland + Japan)) * 100);
 
         list6[c] = listimg[indexx];
 
@@ -358,7 +346,6 @@
       t13.textContent = list5[12] + " %";
       t14.textContent = list5[13] + " %";
       t15.textContent = list5[14] + " %";
-      t16.textContent = list5[15] + " %";
 
 
       b1.textContent = 120 - list4[0];
@@ -376,7 +363,6 @@
       b13.textContent = 120 - list4[12];
       b14.textContent = 120 - list4[13];
       b15.textContent = 120 - list4[14];
-      b16.textContent = 120 - list4[15];
 
 
       o1.textContent = list3[0];
@@ -394,7 +380,6 @@
       o13.textContent = list3[12];
       o14.textContent = list3[13];
       o15.textContent = list3[14];
-      o16.textContent = list3[15];
       
 
       Img1.src = list6[0];
@@ -412,7 +397,6 @@
       Img13.src = list6[12];
       Img14.src = list6[13];
       Img15.src = list6[14];
-      Img16.src = list6[15];
       
      
      spn.textContent = list3[0];
