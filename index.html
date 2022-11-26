@@ -373,14 +373,6 @@
             <span class="span_ball" id="t35">0</span>
             <span class="span_bal" id="b35">0</span>
          </div>
- 
-         <div id="div36">
-            <span class="span_sira" id="s36">36</span>
-            <span class="span_ph"><img src="voice\bos.png" id="p36"></span>
-            <span class="span_olke" id="o36">Bosnia & Her ...</span>
-            <span class="span_ball" id="t36">0</span>
-            <span class="span_bal" id="b36">0</span>
-         </div>
 
 
      </div>
@@ -435,6 +427,7 @@
     <span id="jap">16</span>
     <span id="cyp">7</span>
     <span id="ant">2</span>
+    <span id="usa">21</span>
 
 
   </div>
@@ -477,7 +470,7 @@
       var Netherlands = Number(net.textContent);
       var South = Number(sou.textContent);
       var Japan = Number(jap.textContent);
-
+      var Usa = Number(usa.textContent);
 
       var Img1 = document.getElementById('p1');
       var Img2 = document.getElementById('p2');
@@ -514,22 +507,23 @@
       var Img32 = document.getElementById('p32');
       var Img33 = document.getElementById('p33');
       var Img34 = document.getElementById('p34');
+      var Img35 = document.getElementById('p35');
      
       
 
-      var list1 = [Sweden, Finland, Norway, United, Australia, Mozambique, Austria, Israel, Kosova, Antraktida, Caledonia, Cyprus, Scotland, Azerbaijan, Switzerland, Saint, Aland, Spain, World, France, Italy, Virginia, Uels, Macedonia, Burkina, Nepal, Turkey, Mexico, Czech, Afghanistan, Serbia, Netherlands, South, Japan];
+      var list1 = [Sweden, Finland, Norway, United, Australia, Mozambique, Austria, Israel, Kosova, Antraktida, Caledonia, Cyprus, Scotland, Azerbaijan, Switzerland, Saint, Aland, Spain, World, France, Italy, Virginia, Uels, Macedonia, Burkina, Nepal, Turkey, Mexico, Czech, Afghanistan, Serbia, Netherlands, South, Japan, Usa];
 
-      var list2 = ["Sweden - T.I.ViAl","Finland - Faravuosi","Norway - Narmin","United Kingdom - Ilsvami", "Australia - Sefashka","Mozambique - Coraline","Austria - SÆFTÆR","Israel - Mehemmed","Kosova - Omerica", "Antraktida - Muradfzd", "New Caledonia - Khan Terrero","Cyprus - Neomaren","Scotland - Nargiz","Azerbaijan - AliRza","Switzerland - Nzzzl", "Saint Vin... - Yunis","Aland - Ufuk Sonmez","Spain - Husso","World - Tarlan","France - Lyaman","Italy - Zhala","Virginia - Atermisses","Wales - Afshan","North Mac... - Malay","Burkina Faso - VKS","Nepal - Fortem Singer","Turkey - Orxan","Mexico - Diego","Czech Rep... - Nigar", "Afghanistan - Bofiinot", "Serbia - Rick Grames", "The Netherlands - Chloe", "South Korea - NS", "Japan - Nuray"];
+      var list2 = ["Sweden - T.I.ViAl","Finland - Faravuosi","Norway - Narmin","United Kingdom - Ilsvami", "Australia - Sefashka","Mozambique - Coraline","Austria - SÆFTÆR","Israel - Mehemmed","Kosova - Omerica", "Antraktida - Muradfzd", "New Caledonia - Khan Terrero","Cyprus - Neomaren","Scotland - Nargiz","Azerbaijan - AliRza","Switzerland - Nzzzl", "Saint Vin... - Yunis","Aland - Ufuk Sonmez","Spain - Husso","World - Tarlan","France - Lyaman","Italy - Zhala","Virginia - Atermisses","Wales - Afshan","North Mac... - Malay","Burkina Faso - VKS","Nepal - Fortem Singer","Turkey - Orxan","Mexico - Diego","Czech Rep... - Nigar", "Afghanistan - Bofiinot", "Serbia - Rick Grames", "The Netherlands - Chloe", "South Korea - NS", "Japan - Nuray", "United Sates - GIGI X"];
 
-      var listimg = ['voice/swe.png', 'voice/fin.png', 'voice/nor.png', 'voice/uk.png', 'voice/aus.png', 'voice/moz.png', 'voice/avs.png', 'voice/isr.png', 'voice/kos.png', 'voice/ant.png', 'voice/cal.png', 'voice/cyp.png', 'voice/sco.png', 'voice/aze.png', 'voice/swi.png', 'voice/sai.png', 'voice/ala.png', 'voice/spa.png', 'voice/wor.png', 'voice/fra.png', 'voice/ita.png', 'voice/vir.png', 'voice/uel.png', 'voice/mac.png', 'voice/bur.png', 'voice/nep.png', 'voice/tur.png', 'voice/mex.png', 'voice/cze.png', 'voice/afg.png', 'voice/ser.png', 'voice/net.png', 'voice/sou.png', 'voice/jap.png'];
+      var listimg = ['voice/swe.png', 'voice/fin.png', 'voice/nor.png', 'voice/uk.png', 'voice/aus.png', 'voice/moz.png', 'voice/avs.png', 'voice/isr.png', 'voice/kos.png', 'voice/ant.png', 'voice/cal.png', 'voice/cyp.png', 'voice/sco.png', 'voice/aze.png', 'voice/swi.png', 'voice/sai.png', 'voice/ala.png', 'voice/spa.png', 'voice/wor.png', 'voice/fra.png', 'voice/ita.png', 'voice/vir.png', 'voice/uel.png', 'voice/mac.png', 'voice/bur.png', 'voice/nep.png', 'voice/tur.png', 'voice/mex.png', 'voice/cze.png', 'voice/afg.png', 'voice/ser.png', 'voice/net.png', 'voice/sou.png', 'voice/jap.png', 'voice/usa.png'];
 
 
-      var list3 = [34];
-      var list4 = [34];
-      var list5 = [34];
-      var list6 = [34];
-      var boyuk = 0, indexx = 0, n = 34, c = 0, evez1, evez2, evez3;
-      for (var i = 0; i < 34; i++) {
+      var list3 = [35];
+      var list4 = [35];
+      var list5 = [35];
+      var list6 = [35];
+      var boyuk = 0, indexx = 0, n = 35, c = 0, evez1, evez2, evez3;
+      for (var i = 0; i < 35; i++) {
         for (var j = 0; j < n; j++) {
           if (list1[j] >= boyuk) {
             boyuk = list1[j];
@@ -539,7 +533,7 @@
 
         list3[c] = list2[indexx];
         list4[c] = boyuk;
-        list5[c] = Math.floor((boyuk / (Sweden + Finland + Norway + United + Australia + Mozambique + Austria + Israel + Kosova + Antraktida + Caledonia + Cyprus + Scotland + Azerbaijan + Switzerland + Saint + Aland + Spain + World + France + Italy + Virginia + Uels + Macedonia + Burkina + Nepal + Turkey + Mexico + Czech + Afghanistan + Serbia + Netherlands + South + Japan)) * 100);
+        list5[c] = Math.floor((boyuk / (Sweden + Finland + Norway + United + Australia + Mozambique + Austria + Israel + Kosova + Antraktida + Caledonia + Cyprus + Scotland + Azerbaijan + Switzerland + Saint + Aland + Spain + World + France + Italy + Virginia + Uels + Macedonia + Burkina + Nepal + Turkey + Mexico + Czech + Afghanistan + Serbia + Netherlands + South + Japan + Usa)) * 100);
 
         list6[c] = listimg[indexx];
 
@@ -594,6 +588,7 @@
       t32.textContent = list5[31] + " %";
       t33.textContent = list5[32] + " %";
       t34.textContent = list5[33] + " %";
+      t35.textContent = list5[34] + " %";
 
 
       b1.textContent = 120 - list4[0];
@@ -630,6 +625,7 @@
       b32.textContent = 120 - list4[31];
       b33.textContent = 120 - list4[32];
       b34.textContent = 120 - list4[33];
+      b35.textContent = 120 - list4[34];
 
 
       o1.textContent = list3[0];
@@ -666,6 +662,7 @@
       o32.textContent = list3[31];
       o33.textContent = list3[32];
       o34.textContent = list3[33];
+      o35.textContent = list3[34];
       
 
       Img1.src = list6[0];
@@ -702,6 +699,7 @@
       Img32.src = list6[31];
       Img33.src = list6[32];
       Img34.src = list6[33];
+      Img35.src = list6[34];
       
      
      spn.textContent = list3[0];
