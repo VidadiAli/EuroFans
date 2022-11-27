@@ -238,12 +238,12 @@
     <span id="aus">78</span>
     <span id="tur">3</span>
     <span id="cal">27</span>
-    <span id="aze">8</span>
+    <span id="aze">20</span>
     <span id="usa">23</span>
     <span id="mex">0</span>
-    <span id="cze">15</span>
-    <span id="afg">26</span>
-    <span id="uel">0</span>
+    <span id="cze">118</span>
+    <span id="ant">2</span>
+    <span id="uel">5</span>
     <span id="swi">22</span>
     <span id="jap">20</span>
 
@@ -265,7 +265,7 @@
       var America = Number(usa.textContent);
       var Mexico = Number(mex.textContent);
       var Czech = Number(cze.textContent);
-      var Afghanistan = Number(afg.textContent);
+      var Antraktida = Number(ant.textContent);
       var Uels = Number(uel.textContent);
       var Switzerland = Number(swi.textContent);
       var Japan = Number(jap.textContent);
@@ -288,11 +288,11 @@
       var Img15 = document.getElementById('p15');
       
 
-      var list1 = [South, Saint, France, Serbia, Austria, Turkey , Caledonia, Azerbaijan, America, Mexico, Czech, Afghanistan, Uels, Switzerland, Japan];
+      var list1 = [South, Saint, France, Serbia, Austria, Turkey , Caledonia, Azerbaijan, America, Mexico, Czech, Antraktida, Uels, Switzerland, Japan];
 
-      var list2 = ["South Korea", "Saint", "France", "Serbia", "Austria", "Turkey" , "New Caledonia", "Azerbaijan", "United States", "Mexico", "Czech Republic", "Afghanistan", "Wales", "Switzerland", "Japan"];
+      var list2 = ["South Korea", "Saint", "France", "Serbia", "Austria", "Turkey" , "New Caledonia", "Azerbaijan", "United States", "Mexico", "Czech Republic", "Antraktida", "Wales", "Switzerland", "Japan"];
 
-      var listimg = ['voice/sou.png', 'voice/sai.png', 'voice/fra.png', 'voice/ser.png', 'voice/avs.png', 'voice/tur.png', 'voice/cal.png', 'voice/aze.png', 'voice/usa.png', 'voice/mex.png', 'voice/cze.png', 'voice/afg.png', 'voice/uel.png', 'voice/swi.png', 'voice/jap.png'];
+      var listimg = ['voice/sou.png', 'voice/sai.png', 'voice/fra.png', 'voice/ser.png', 'voice/avs.png', 'voice/tur.png', 'voice/cal.png', 'voice/aze.png', 'voice/usa.png', 'voice/mex.png', 'voice/cze.png', 'voice/ant.png', 'voice/uel.png', 'voice/swi.png', 'voice/jap.png'];
 
 
       var list3 = [15];
@@ -310,7 +310,7 @@
 
         list3[c] = list2[indexx];
         list4[c] = boyuk;
-        list5[c] = Math.floor((boyuk / (South+ Saint + France + Serbia  + Austria + Turkey + Caledonia + Azerbaijan + America + Mexico + Czech + Afghanistan + Uels + Switzerland + Japan)) * 100);
+        list5[c] = Math.floor((boyuk / (South+ Saint + France + Serbia  + Austria + Turkey + Caledonia + Azerbaijan + America + Mexico + Czech + Antraktida + Uels + Switzerland + Japan)) * 100);
 
         list6[c] = listimg[indexx];
 
