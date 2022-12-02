@@ -373,15 +373,15 @@
 	    width: 1rem;
     }
     .odds .ooddss .ooddss_box div .span_olke{
-	    width: calc(100% - 8.1rem);
+	    width: calc(100% - 9.5rem);
 	    padding: 0;
 	    padding-left: .3rem;
     }
     .odds .ooddss .ooddss_box div .span_bal{
-	    width: 2rem;
+	    width: 1.5rem;
     }
     .odds .ooddss .ooddss_box div .span_ball{
-	    width: 2rem;
+	    width: 4rem;
     }
 	.editions a{
         width: calc(96% / 3);
