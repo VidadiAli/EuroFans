@@ -218,7 +218,7 @@
 }
 .odds .ooddss .ooddss_box div .span_olke{
 	text-align: left;
-	width: calc(100% - 10.5rem);
+	width: calc(100% - 15rem);
 	padding:0 1rem;
 	border-bottom: 1px solid black;
 }
@@ -226,7 +226,7 @@
 	width: 2.5rem;
 }
 .odds .ooddss .ooddss_box div .span_ball{
-	width: 6rem;
+	width: 5rem;
 }
 
 
