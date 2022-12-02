@@ -328,7 +328,6 @@
 
      </div>
 
-   </div>
 
    <div class="photo qosha">
 
@@ -354,14 +353,14 @@
     <span id="nor">26</span>
     <span id="spa">23</span>
     <span id="aus">22</span>
-    <span id="wor">47</span>
-    <span id="vir">48</span>
+    <span id="wor">61</span>
+    <span id="vir">30</span>
     <span id="uel">17</span>
-    <span id="mac">18</span>
+    <span id="mac">31</span>
     <span id="bur">11</span>
     <span id="cal">26</span>
     <span id="fin">31</span>
-    <span id="cze">63</span>
+    <span id="cze">92</span>
     <span id="tur">6</span>
     <span id="mex">1</span>
     <span id="kos">28</span>
@@ -441,13 +440,13 @@
       var Img27 = document.getElementById('p27');
       var Img28 = document.getElementById('p28');
       var Img29 = document.getElementById('p29');
-      var 
+     
      
       
 
       var list1 = [Sweden, Finland, Norway, United, Australia, Mozambique, Austria, Kosova, Antraktida, Caledonia, Cyprus, Scotland, Azerbaijan, Switzerland, Saint, Spain, World, Virginia, Uels, Macedonia, Burkina, Turkey, Mexico, Czech, Afghanistan, Serbia, South, Japan, Usa];
 
-      var list2 = ["Sweden - T.I.ViAl","Finland - Faravuosi","Norway - Narmin","United Kingdom - Ilsvami", "Australia - Sefashka","Mozambique - Coraline","Austria - SÆFTÆR", "Kosova - Omerica", "Antraktida - Muradfzd", "New Caledonia - Khan Terrero","Cyprus - Neomaren","Scotland - Nargiz","Azerbaijan - AliRza","Switzerland - Nzzzl", "Saint Vin... - Yunis", "Spain - Husso","World - Tarlan & Gözel","Virginia - Atermisses","Wales - Afshan","North Mac... - Malay","Burkina Faso - VKS","Turkey - Orxan","Mexico - Diego","Czech Rep... - Nigar", "Afghanistan - Bofiinot", "Serbia - Rick Grames", "South Korea - NS", "Japan - Nuray", "United Sates - GIGI X"];
+      var list2 = ["Sweden - T.I.ViAl","Finland - Faravuosi","Norway - Narmin","United Kingdom - Ilsvami", "Australia - Sefashka","Mozambique - Coraline","Austria - SÆFTÆR", "Kosova - Omerica", "Antraktida - Muradfzd", "New Caledonia - Khan Terrero","Cyprus - Neomaren","Scotland - Nargiz","Azerbaijan - AliRza","Switzerland - Nzzzl", "Saint Vin... - Yunis", "Spain - Husso","World - Tarlan & Gözel","Virginia - Atermisses","Wales - Afshan","N. Macedonia - Malay","Burkina Faso - VKS","Turkey - Orxan", "Mexico - Diego","Czech Republic - Nigar", "Afghanistan - Bofiinot", "Serbia - Rick Grames", "South Korea - NS", "Japan - Nuray", "United Sates - GIGI X"];
 
       var listimg = ['voice/swe.png', 'voice/fin.png', 'voice/nor.png', 'voice/uk.png', 'voice/aus.png', 'voice/moz.png', 'voice/avs.png', 'voice/kos.png', 'voice/ant.png', 'voice/cal.png', 'voice/cyp.png', 'voice/sco.png', 'voice/aze.png', 'voice/swi.png', 'voice/sai.png', 'voice/spa.png', 'voice/wor.png', 'voice/vir.png', 'voice/uel.png', 'voice/mac.png', 'voice/bur.png', 'voice/tur.png', 'voice/mex.png', 'voice/cze.png', 'voice/afg.png', 'voice/ser.png', 'voice/sou.png', 'voice/jap.png', 'voice/usa.png'];
 
@@ -467,7 +466,7 @@
 
         list3[c] = list2[indexx];
         list4[c] = boyuk;
-        list5[c] = Math.floor((boyuk / (Sweden + Finland + Norway + United + Australia + Mozambique + Austria + Kosova + Antraktida + Caledonia + Cyprus + Scotland + Azerbaijan + Switzerland + Saint + Spain + World + Virginia + Uels + Macedonia + Burkina + Turkey + Mexico + Czech + Afghanistan + Serbia + South + Japan + Usa)) * 100);
+        list5[c] = ((boyuk / (Sweden + Finland + Norway + United + Australia + Mozambique + Austria + Kosova + Antraktida + Caledonia + Cyprus + Scotland + Azerbaijan + Switzerland + Saint + Spain + World + Virginia + Uels + Macedonia + Burkina + Turkey + Mexico + Czech + Afghanistan + Serbia + South + Japan + Usa)) * 100).toFixed(1);
 
         list6[c] = listimg[indexx];
 
