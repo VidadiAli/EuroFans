@@ -204,14 +204,6 @@
          <span class="span_ball" id="t14">0</span>
          <span class="span_bal" id="b14">0</span>
       </div>
-
-      <div id="div15">
-         <span class="span_sira" id="s15">15</span>
-         <span class="span_ph"><img src="voice\net.png" id="p15"></span>
-         <span class="span_olke" id="o15">The Netherlands</span>
-         <span class="span_ball" id="t15">0</span>
-         <span class="span_bal" id="b15">0</span>
-      </div>
          
      </div>
 
@@ -233,18 +225,17 @@
 
     <span id="sou">12</span>
     <span id="sai">25</span>
-    <span id="fra">6</span>
     <span id="ser">29</span>
     <span id="aus">33</span>
     <span id="tur">3</span>
     <span id="cal">19</span>
-    <span id="aze">24</span>
+    <span id="aze">30</span>
     <span id="usa">23</span>
     <span id="mex">0</span>
     <span id="cze">119</span>
     <span id="ant">2</span>
     <span id="uel">5</span>
-    <span id="swi">22</span>
+    <span id="swi">28</span>
     <span id="jap">20</span>
 
 
@@ -256,7 +247,6 @@
  
       var South = Number(sou.textContent);
       var Saint = Number(sai.textContent);
-      var France = Number(fra.textContent);
       var Serbia = Number(ser.textContent);
       var Austria = Number(aus.textContent);
       var Turkey = Number(tur.textContent);
@@ -285,22 +275,22 @@
       var Img12 = document.getElementById('p12');
       var Img13 = document.getElementById('p13');
       var Img14 = document.getElementById('p14');
-      var Img15 = document.getElementById('p15');
+      
       
 
-      var list1 = [South, Saint, France, Serbia, Austria, Turkey , Caledonia, Azerbaijan, America, Mexico, Czech, Antraktida, Uels, Switzerland, Japan];
+      var list1 = [South, Saint, Serbia, Austria, Turkey , Caledonia, Azerbaijan, America, Mexico, Czech, Antraktida, Uels, Switzerland, Japan];
 
-      var list2 = ["South Korea", "Saint", "France", "Serbia", "Austria", "Turkey" , "New Caledonia", "Azerbaijan", "United States", "Mexico", "Czech Republic", "Antraktida", "Wales", "Switzerland", "Japan"];
+      var list2 = ["South Korea", "Saint", "Serbia", "Austria", "Turkey" , "New Caledonia", "Azerbaijan", "United States", "Mexico", "Czech Republic", "Antraktida", "Wales", "Switzerland", "Japan"];
 
-      var listimg = ['voice/sou.png', 'voice/sai.png', 'voice/fra.png', 'voice/ser.png', 'voice/avs.png', 'voice/tur.png', 'voice/cal.png', 'voice/aze.png', 'voice/usa.png', 'voice/mex.png', 'voice/cze.png', 'voice/ant.png', 'voice/uel.png', 'voice/swi.png', 'voice/jap.png'];
+      var listimg = ['voice/sou.png', 'voice/sai.png', 'voice/ser.png', 'voice/avs.png', 'voice/tur.png', 'voice/cal.png', 'voice/aze.png', 'voice/usa.png', 'voice/mex.png', 'voice/cze.png', 'voice/ant.png', 'voice/uel.png', 'voice/swi.png', 'voice/jap.png'];
 
 
-      var list3 = [15];
-      var list4 = [15];
-      var list5 = [16];
-      var list6 = [15];
-      var boyuk = 0, indexx = 0, n = 15, c = 0, evez1, evez2, evez3;
-      for (var i = 0; i < 15; i++) {
+      var list3 = [14];
+      var list4 = [14];
+      var list5 = [14];
+      var list6 = [14];
+      var boyuk = 0, indexx = 0, n = 14, c = 0, evez1, evez2, evez3;
+      for (var i = 0; i < 14; i++) {
         for (var j = 0; j < n; j++) {
           if (list1[j] >= boyuk) {
             boyuk = list1[j];
@@ -310,8 +300,10 @@
 
         list3[c] = list2[indexx];
         list4[c] = boyuk;
-        list5[c] = Math.floor((boyuk / (South+ Saint + France + Serbia  + Austria + Turkey + Caledonia + Azerbaijan + America + Mexico + Czech + Antraktida + Uels + Switzerland + Japan)) * 100);
-
+        list5[c] = ((boyuk / (South+ Saint + Serbia  + Austria + Turkey + Caledonia + Azerbaijan + America + Mexico + Czech + Antraktida + Uels + Switzerland + Japan)) * 100).toFixed(1);
+        if(list5[c]<1){
+           list5[c]="<1";
+        }
         list6[c] = listimg[indexx];
 
         evez3 = listimg[n - 1];
@@ -345,7 +337,6 @@
       t12.textContent = list5[11] + " %";
       t13.textContent = list5[12] + " %";
       t14.textContent = list5[13] + " %";
-      t15.textContent = list5[14] + " %";
 
 
       b1.textContent = 120 - list4[0];
@@ -362,7 +353,6 @@
       b12.textContent = 120 - list4[11];
       b13.textContent = 120 - list4[12];
       b14.textContent = 120 - list4[13];
-      b15.textContent = 120 - list4[14];
 
 
       o1.textContent = list3[0];
@@ -379,7 +369,6 @@
       o12.textContent = list3[11];
       o13.textContent = list3[12];
       o14.textContent = list3[13];
-      o15.textContent = list3[14];
       
 
       Img1.src = list6[0];
@@ -396,7 +385,6 @@
       Img12.src = list6[11];
       Img13.src = list6[12];
       Img14.src = list6[13];
-      Img15.src = list6[14];
       
      
      spn.textContent = list3[0];
