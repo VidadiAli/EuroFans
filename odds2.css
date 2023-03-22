@@ -1,10 +1,3 @@
-*{
-	padding: 0;
-	margin: 0;
-}
-
-
-
 .sosial{
 	width: 10rem;
 	position: absolute;
@@ -79,13 +72,13 @@
 
 .editions{
 	width: 100%;
+	display: flex;
+	justify-content: space-around;
 	padding: 1rem 0;
 	margin: 1rem 0;
 }
 .editions a{
-	display: inline-block;
-	position: relative;
-	width: 10rem;
+	width: calc(100% / 6);
 	margin: .5rem 0;
 	padding: .5rem 1rem;
 	text-decoration: none;
@@ -94,7 +87,6 @@
 	background: red;
 	color: white;
 	font-weight: 900;
-	left: calc(100% / 3);
 	border-radius: 1rem;
 	transition: .3s;
 }
@@ -280,10 +272,11 @@
 }
 
 @media (max-width: 800px){
+    .editions{
+    	flex-wrap: wrap;
+    }
     .editions a{
-        width: calc(98% / 3);
-        left: 0;
-        padding: .5rem 0;
+    	width: calc(100% / 5);
     }
 }
 
@@ -325,6 +318,11 @@
 		margin: .5rem .5%;
 		padding: .5rem 0;
 	}
+    .editions {gap: 10px;}
+	
+    .editions a{
+    	width: calc(100% / 2.3);
+    }
 }
 
 @media (max-width: 555px){
@@ -382,10 +380,6 @@
     }
     .odds .ooddss .ooddss_box div .span_ball{
 	    width: 4rem;
-    }
-	.editions a{
-        width: calc(96% / 3);
-		padding: .2rem 0;
     }
 }
 
