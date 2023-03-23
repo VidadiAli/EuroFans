@@ -212,6 +212,14 @@
            <span class="span_bal" id="b15">0</span>
         </div>
 
+        <div id="div16">
+           <span class="span_sira" id="s16">16</span>
+           <span class="span_ph"><img src="voice\net.png" id="p16"></span>
+           <span class="span_olke" id="o16">The Netherlands</span>
+           <span class="span_ball" id="t16">0</span>
+           <span class="span_bal" id="b16">0</span>
+        </div>
+
 
      </div>
 
@@ -231,21 +239,22 @@
 
 <div style="display: none; position: absolute; z-index: -5;">
 
-    <span id="cyp">17</span>
-    <span id="net">5</span>
-    <span id="moz">14</span>
-    <span id="ala">5</span>
-    <span id="afg">20</span>
-    <span id="nor">40</span>
-    <span id="isr">3</span>
-    <span id="sco">15</span>
-    <span id="vir">57</span>
-    <span id="bur">22</span>
-    <span id="ita">12</span>
-    <span id="fin">41</span>
-    <span id="uk">56</span>
-    <span id="nep">13</span>
-    <span id="mac">43</span>
+    <span id="bel">0</span>
+    <span id="pol">5</span>
+    <span id="sin">30</span>
+    <span id="cal">28</span>
+    <span id="dji">10</span>
+    <span id="swi">0</span>
+    <span id="isr">33</span>
+    <span id="nor">4</span>
+    <span id="usa">7</span>
+    <span id="por">22</span>
+    <span id="ger">12</span>
+    <span id="fra">15</span>
+    <span id="uk">23</span>
+    <span id="swe">13</span>
+    <span id="aze">25</span>
+    <span id="wor">21</span>
 
 
   </div>
@@ -254,21 +263,22 @@
 <script type="text/javascript">
    
  
-      var Cyprus = Number(cyp.textContent);
-      var Netherlands = Number(net.textContent);
-      var Mozambique = Number(moz.textContent);
-      var Aland = Number(ala.textContent);
-      var Afghanistan = Number(afg.textContent);
+      var Belgium = Number(bel.textContent);
+      var Poland = Number(pol.textContent);
+      var Singapur = Number(sin.textContent);
+      var Caledonia = Number(cal.textContent);
       var Norway = Number(nor.textContent);
       var Israel = Number(isr.textContent);
-      var Scotland = Number(sco.textContent);
-      var Virginia = Number(vir.textContent);
-      var Burkina = Number(bur.textContent);
-      var Italy = Number(ita.textContent);
-      var Finland = Number(fin.textContent);
+      var Djibouti = Number(dji.textContent);
+      var Switzerland = Number(swi.textContent);
+      var Sweden = Number(swe.textContent);
+      var France = Number(fra.textContent);
       var United = Number(uk.textContent);
-      var Nepal = Number(nep.textContent);
-      var Macedonia = Number(mac.textContent);
+      var Usa = Number(usa.textContent);
+      var Germany = Number(ger.textContent);
+      var Portugal = Number(por.textContent);
+      var World = Number(wor.textContent);
+      var Azerbaijan = Number(aze.textContent);
 
 
       var Img1 = document.getElementById('p1');
@@ -286,21 +296,22 @@
       var Img13 = document.getElementById('p13');
       var Img14 = document.getElementById('p14');
       var Img15 = document.getElementById('p15');
+      var Img16 = document.getElementById('p16');
       
 
-      var list1 = [Cyprus, Netherlands, Mozambique, Aland, Afghanistan, Norway, Israel, Scotland, Virginia, Burkina, Italy, Finland, United, Nepal, Macedonia];
+      var list1=[Belgium , Poland,  Singapur,  Caledonia,  Norway,  Israel,  Djibouti,  Switzerland,  Sweden,  France , United, Usa,  Germany,  Portugal,  World,  Azerbaijan];
 
-      var list2 = ["Cyprus", "The Netherlands", "Mozambique", "Aland", "Afghanistan", "Norway", "Israel", "Scotland", "Virginia", "Burkina Faso", "Italy", "Finland", "United Kingdom", "Nepal", "North Macedonia"];
+      var list2 = ["Belgium" , "Poland",  "Singapur",  "New Caledonia",  "Norway",  "Israel",  "Djibouti",  "Switzerland",  "Sweden",  "France" , "United Kingdom", "United States",  "Germany",  "Portugal",  "World",  "Azerbaijan"];
 
-      var listimg = ['voice/cyp.png', 'voice/net.png', 'voice/moz.png', 'voice/ala.png', 'voice/afg.png', 'voice/nor.png', 'voice/isr.png', 'voice/sco.png', 'voice/vir.png', 'voice/bur.png', 'voice/ita.png', 'voice/fin.png', 'voice/uk.png', 'voice/nep.png', 'voice/mac.png'];
+      var listimg = ['voice/bel.png', 'voice/pol.png', 'voice/sin.png', 'voice/cal.png', 'voice/nor.png', 'voice/isr.png', 'voice/dji.png', 'voice/swi.png', 'voice/swe.png', 'voice/fra.png', 'voice/uk.png', 'voice/usa.png', 'voice/ger.png', 'voice/por.png', 'voice/wor.png', 'voice/aze.png'];
 
 
-      var list3 = [15];
-      var list4 = [15];
-      var list5 = [15];
-      var list6 = [15];
-      var boyuk = 0, indexx = 0, n = 15, c = 0, evez1, evez2, evez3;
-      for (var i = 0; i < 15; i++) {
+      var list3 = [16];
+      var list4 = [16];
+      var list5 = [16];
+      var list6 = [16];
+      var boyuk = 0, indexx = 0, n = 16, c = 0, evez1, evez2, evez3;
+      for (var i = 0; i < 16; i++) {
         for (var j = 0; j < n; j++) {
           if (list1[j] >= boyuk) {
             boyuk = list1[j];
@@ -310,7 +321,7 @@
 
         list3[c] = list2[indexx];
         list4[c] = boyuk;
-        list5[c] = Math.floor((boyuk / (Cyprus + Netherlands + Mozambique + Aland + Afghanistan + Norway + Israel + Scotland + Virginia + Burkina + Italy + Finland + United + Nepal + Macedonia)) * 100);
+        list5[c] = Math.floor((boyuk / (Belgium  + Poland +  Singapur +  Caledonia +  Norway +  Israel +  Djibouti +  Switzerland +  Sweden +  France  + United + Usa +  Germany +  Portugal +  World +  Azerbaijan)) * 100);
 
         list6[c] = listimg[indexx];
 
@@ -330,6 +341,12 @@
         boyuk = 0;
       }
 
+      for (var i = 0; i < 32; i++) {
+         if (list5[i]<1) {
+            list5[i]="< 1";
+         }
+      }
+
 
       t1.textContent = list5[0] + " %";
       t2.textContent = list5[1] + " %";
@@ -346,6 +363,7 @@
       t13.textContent = list5[12] + " %";
       t14.textContent = list5[13] + " %";
       t15.textContent = list5[14] + " %";
+      t16.textContent = list5[15] + " %";
 
 
       b1.textContent = 120 - list4[0];
@@ -363,6 +381,7 @@
       b13.textContent = 120 - list4[12];
       b14.textContent = 120 - list4[13];
       b15.textContent = 120 - list4[14];
+      b16.textContent = 120 - list4[15];
 
 
       o1.textContent = list3[0];
@@ -380,6 +399,7 @@
       o13.textContent = list3[12];
       o14.textContent = list3[13];
       o15.textContent = list3[14];
+      o16.textContent = list3[15];
       
 
       Img1.src = list6[0];
@@ -397,6 +417,7 @@
       Img13.src = list6[12];
       Img14.src = list6[13];
       Img15.src = list6[14];
+      Img16.src = list6[15];
       
      
      spn.textContent = list3[0];
