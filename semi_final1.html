@@ -242,7 +242,7 @@
 
     <span id="bel">0</span>
     <span id="pol">5</span>
-    <span id="sin">30</span>
+    <span id="mor">30</span>
     <span id="cal">28</span>
     <span id="dji">10</span>
     <span id="swi">0</span>
@@ -253,9 +253,9 @@
     <span id="ger">12</span>
     <span id="fra">15</span>
     <span id="uk">23</span>
-    <span id="swe">13</span>
-    <span id="aze">25</span>
-    <span id="wor">21</span>
+    <span id="mac">13</span>
+    <span id="aus">25</span>
+    <span id="geo">21</span>
 
 
   </div>
@@ -266,20 +266,20 @@
  
       var Belgium = Number(bel.textContent);
       var Poland = Number(pol.textContent);
-      var Singapur = Number(sin.textContent);
+      var Morocco = Number(mor.textContent);
       var Caledonia = Number(cal.textContent);
       var Norway = Number(nor.textContent);
       var Israel = Number(isr.textContent);
       var Djibouti = Number(dji.textContent);
       var Switzerland = Number(swi.textContent);
-      var Sweden = Number(swe.textContent);
+      var Australia = Number(aus.textContent);
       var France = Number(fra.textContent);
       var United = Number(uk.textContent);
       var Usa = Number(usa.textContent);
       var Germany = Number(ger.textContent);
       var Portugal = Number(por.textContent);
-      var World = Number(wor.textContent);
-      var Azerbaijan = Number(aze.textContent);
+      var Macedonia = Number(mac.textContent);
+      var Georgia = Number(geo.textContent);
 
 
       var Img1 = document.getElementById('p1');
@@ -300,11 +300,11 @@
       var Img16 = document.getElementById('p16');
       
 
-      var list1=[Belgium , Poland,  Singapur,  Caledonia,  Norway,  Israel,  Djibouti,  Switzerland,  Sweden,  France , United, Usa,  Germany,  Portugal,  World,  Azerbaijan];
+      var list1=[Belgium , Poland,  Morocco,  Caledonia,  Norway,  Israel,  Djibouti,  Switzerland,  Macedonia,  France , United, Usa,  Germany,  Portugal,  Georgia,  Australia];
 
-      var list2 = ["Belgium" , "Poland",  "Singapur",  "New Caledonia",  "Norway",  "Israel",  "Djibouti",  "Switzerland",  "Sweden",  "France" , "United Kingdom", "United States",  "Germany",  "Portugal",  "World",  "Azerbaijan"];
+      var list2 = ["Belgium" , "Poland",  "Morocco",  "New Caledonia",  "Norway",  "Israel",  "Djibouti",  "Switzerland",  "Macedonia",  "France" , "United Kingdom", "United States",  "Germany",  "Portugal",  "Georgia",  "Australia"];
 
-      var listimg = ['voice/bel.png', 'voice/pol.png', 'voice/sin.png', 'voice/cal.png', 'voice/nor.png', 'voice/isr.png', 'voice/dji.png', 'voice/swi.png', 'voice/swe.png', 'voice/fra.png', 'voice/uk.png', 'voice/usa.png', 'voice/ger.png', 'voice/por.png', 'voice/wor.png', 'voice/aze.png'];
+      var listimg = ['voice/bel.png', 'voice/pol.png', 'voice/mor.png', 'voice/cal.png', 'voice/nor.png', 'voice/isr.png', 'voice/dji.png', 'voice/swi.png', 'voice/mac.png', 'voice/fra.png', 'voice/uk.png', 'voice/usa.png', 'voice/ger.png', 'voice/por.png', 'voice/geo.png', 'voice/aus.png'];
 
 
       var list3 = [16];
@@ -322,7 +322,7 @@
 
         list3[c] = list2[indexx];
         list4[c] = boyuk;
-        list5[c] = Math.floor((boyuk / (Belgium  + Poland +  Singapur +  Caledonia +  Norway +  Israel +  Djibouti +  Switzerland +  Sweden +  France  + United + Usa +  Germany +  Portugal +  World +  Azerbaijan)) * 100);
+        list5[c] = Math.floor((boyuk / (Belgium  + Poland +  Morocco +  Caledonia +  Norway +  Israel +  Djibouti +  Switzerland +  Macedonia +  France  + United + Usa +  Germany +  Portugal +  Georgia +  Australia)) * 100);
 
         list6[c] = listimg[indexx];
 
